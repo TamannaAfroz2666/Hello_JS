@@ -9,3 +9,10 @@ function Multiply() {
     
     
 }
+function divide() {
+    num1 =document.getElementById('first_value').value;
+    num2 = document.getElementById('second_value').value;
+    results = document.getElementById('result').innerHTML = num1 / num2;
+    console.log('divided value is', results);
+    
+}

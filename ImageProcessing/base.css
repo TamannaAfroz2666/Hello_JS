@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #f0ac68;
+    color: white;
+}
+h1{
+    text-align: center;
+    padding: 80px 0;
+}

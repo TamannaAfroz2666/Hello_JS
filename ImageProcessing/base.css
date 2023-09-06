@@ -23,3 +23,6 @@ form{
     align-items: center;
     background: #434989;
 }
+form input{
+    flex: 1;
+}

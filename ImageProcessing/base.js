@@ -11,7 +11,7 @@ let page = 1;
 
 async function searchImage(){
     keyword = searchBox.value;
-    const url = `https://api.unsplash.com/search/photos?page=${page}&query=${keyword}&client_id=${accesKey}`;
+    const url = `https://api.unsplash.com/search/photos?page=${page}&query=${keyword}&client_id=${accesKey}&per_page=12`;
 
     // console.log('here is',url);
 

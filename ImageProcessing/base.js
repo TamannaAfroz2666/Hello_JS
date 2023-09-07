@@ -19,7 +19,7 @@ async function searchImage(){
     const data = await response.json();
     console.log( data);
 
-    const results = data.results;
+    // const results = data.results;
     
 }
 

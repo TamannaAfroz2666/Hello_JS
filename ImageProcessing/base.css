@@ -171,7 +171,6 @@ form button{
     }
     form button{
         max-width: 200px;
-        /* height: 50px; */
         background-color: #1be0d7;
         padding: 40px 20px;
         text-align: center;
@@ -179,6 +178,22 @@ form button{
         line-height: 4px;
         
     } 
+
+    #search_result{
+        width: 100%;      
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 40px;
+        right: 7em;
+        position: relative;
+       
+    }
+    #search_result img{
+        width: 90%;
+        height: 350px;
+        object-fit: cover;     
+        overflow: hidden;
+    }
 
     
 }

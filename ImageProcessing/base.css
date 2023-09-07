@@ -92,6 +92,8 @@ form button{
 
 /* using responsive start  */
 
+/* for header  */
+
 @media screen and (max-width: 576px)  {
     body{
         background-color: aqua;
@@ -114,7 +116,27 @@ form button{
         background-color: rgb(45, 45, 235);
         padding: 0 10px;
         margin-right: 30px;
-    }
+    } 
+}
+/* for header closed  */
 
-   
+/* image section start  */
+
+@media screen and (max-width:  576px) {
+    #search_result{
+        width: 100%;      
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 40px;
+        right: 5em;
+        position: relative;
+       
+    }
+    #search_result img{
+        width: 80%;
+        height: 150px;
+        object-fit: cover;     
+        overflow: hidden;
+    }
+      
 }

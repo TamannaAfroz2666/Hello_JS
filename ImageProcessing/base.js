@@ -32,12 +32,7 @@ async function searchImage(){
          searchResult.appendChild(imageLink);
 
     })
-    searchShowBtn.style.display = 'block';
-
-    
-
-    
-    
+    searchShowBtn.style.display = 'block';        
 }
 
 if(searchFrom){
@@ -46,4 +41,12 @@ searchFrom.addEventListener("submit", (e) =>{
     page = 1;
     searchImage();
 })
+}
+
+if(searchShowBtn){
+    searchShowBtn.addEventListener("click", () =>{
+        page++;
+        searchImage();
+
+    })
 }

@@ -26,8 +26,10 @@ async function searchImage(){
          const imageLink = document.createElement('a');
          imageLink.href = result.links.html;
          imageLink.target = '_blank';
-         //append child
+         //append child from img to ankor tag
          imageLink.appendChild(image);
+        //append child from img to show tag
+         searchResult.appendChild(imageLink);
 
     })
 

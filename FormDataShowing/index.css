@@ -2,6 +2,19 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-   ;
+   font-family: 'Poppins', sans-serif;
+   
+}
+
+.form_main{
+    width: 100%;
+    height: 40em;
+    margin-top: 30px;
+    padding: auto;
+    background-image: url('../FormDataShowing/images/BackgroundChanging2.jpg');
+    background-position: center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }

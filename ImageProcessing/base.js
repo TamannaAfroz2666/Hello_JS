@@ -13,13 +13,17 @@ async function searchImage(){
     keyword = searchBox.value;
     const url = `https://api.unsplash.com/search/photos?page=${page}&query=${keyword}&client_id=${accesKey}`;
 
-    console.log('here is',url);
+    // console.log('here is',url);
 
     const response = await fetch(url);
     const data = await response.json();
-    console.log( data);
+    console.log(data);
+    const result = data.results;
+    console.log('result is', result);
 
-    // const results = data.results;
+    
+
+    
     
 }
 

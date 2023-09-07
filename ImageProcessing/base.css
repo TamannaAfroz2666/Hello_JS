@@ -60,14 +60,15 @@ form button{
 /* show more button design  */
 #show_more_btn{
     background-color: aqua;
-    padding: 10px 20px;
-    font-size: 14px;
+    padding: 8px 20px;
+    font-size: 16px;
     border: 0;
     outline: 0;
     border-radius: 8px;
-    margin: 20px 40em;
+    margin: 20px 37em;
     cursor: pointer;
     display: none;
+    font-weight: 600;
 }
 /* show more button design end */
 

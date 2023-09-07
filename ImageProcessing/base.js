@@ -32,6 +32,7 @@ async function searchImage(){
          searchResult.appendChild(imageLink);
 
     })
+    searchShowBtn.style.display = 'block';
 
     
 

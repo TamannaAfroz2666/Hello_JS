@@ -42,6 +42,17 @@
     text-align:justify; 
     padding: 10px 40px;
     font-weight: 600;
-  
+}
+.horijontal hr{
+    padding: 0px 40px;
 
+}
+
+/* start form style  */
+.form_main span{
+    color: red;
+}
+.name{
+    display: inline-flex;
+    gap: 30px;
 }

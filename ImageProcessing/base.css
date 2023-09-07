@@ -147,6 +147,10 @@ form button{
     body{
         background-color: #fcbd5f;
     }
+    h1{
+        font-size: 50px;
+        color: DarkOrchid;
+    }
     .form_section{
         width: 100%;
     }

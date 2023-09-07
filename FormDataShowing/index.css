@@ -52,7 +52,7 @@
 .form_main span{
     color: red;
 }
-.name{
+.customer_name{
     display: inline-flex;
     gap: 30px;
 }

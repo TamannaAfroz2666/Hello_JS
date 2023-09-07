@@ -29,12 +29,19 @@
             
             
             <form id="form_main" action="" method="post">
-                <label for="name">Customer name <span>*</span></label>
-                <div class="name">
-                    <input type="text">
-                    <input type="text">
-                    <input type="text">
-                    <input type="text">
+                <label for="name">Customer name <span>*</span></label> <br>
+                <div class="customer_name">
+                    <!-- <input type="text"> -->
+                    <select name="name" id="gender_list">
+                        <option value="Title">Title</option>
+                        <option value="ms">Ms</option>
+                        <option value="miss">Miss</option>
+                        <option value="mr">Mr</option>
+                        <option value="mrs">Mrs</option>
+                    </select>
+                    <input type="text" class="first_name" id="first_name" value="" placeholder="Frist" autocomplete="off">
+                    <input type="text" class="initials_name" id="initials_name" value="" placeholder="Initials" autocomplete="off">
+                    <input type="text" class="last_name" id="last_name" value="" placeholder="Last" autocomplete="off">
                 </div>
 
 

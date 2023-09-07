@@ -159,11 +159,9 @@ form button{
         margin-right: 9em;
     }
     form input{
-        /* background-color: red; */
         max-width: 100%;
         height: 2em;
         font-size: 40px;
-        /* margin-right: 50px; */
     }
     ::placeholder{
         font-size: 24px ;

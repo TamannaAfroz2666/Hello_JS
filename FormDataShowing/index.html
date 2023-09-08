@@ -17,6 +17,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@200&display=swap" rel="stylesheet">
     <!-- google fonts end -->
+
+    <!-- country name  -->
+    <link rel="stylesheet" href="//g.tutorialjinni.com/mojoaxel/bootstrap-select-country/dist/css/bootstrap-select-country.min.css" />
 </head>
 
 <body>
@@ -69,12 +72,8 @@
 
                     <input type="text" class="city" id="postal_id" value="" name="city" placeholder="Postal\ Zip code"
                         autocomplete="off">
-                        <select name="name" id="country_list">
-                            <option value="country">Country</option>
-                           
-                        </select>
-                    <!-- <input type="text" class="region" id="country_id" value="" name="region" placeholder="Country (api theke country list nia aste hobe pending)"
-                        autocomplete="off"> -->
+                        <select id="countryPicker" class="countrypicker" data-flag="true"></select>
+                      
                 </div>
 
                 <div class="sub_sub_input">
@@ -127,9 +126,23 @@
 
 
     </section>
-    <!-- <h1>bootstrap</h1>
 
-    <button type="button" class="btn btn-primary">add</button> -->
+
+        <!-- <link rel="stylesheet" href="//cdn.tutorialjinni.com/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="//cdn.tutorialjinni.com/bootstrap-select/1.12.4/css/bootstrap-select.min.css"> -->
+
+
+<!-- <select class="selectpicker countrypicker" data-flag="true"></select> -->
+
+
+
+            <!-- country list start -->
+<script src="//cdn.tutorialjinni.com/jquery/3.6.1/jquery.min.js"></script>
+<script src="//cdn.tutorialjinni.com/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="//cdn.tutorialjinni.com/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+<script src="//g.tutorialjinni.com/mojoaxel/bootstrap-select-country/dist/js/bootstrap-select-country.min.js"></script>
+<!-- country list start -->
+
 
     <!-- js and bootstrap links add  -->
     <script src="../FormDataShowing/index.js"></script>

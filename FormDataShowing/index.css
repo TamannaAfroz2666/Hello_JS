@@ -67,6 +67,11 @@
     width: 180px;
     height: 40px;
 }
+.customer_name select option{
+    color: #161010;
+    font-size: 18px;
+    font-weight: 400;
+}
 
 
 /* create hover  */

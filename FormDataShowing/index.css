@@ -79,7 +79,24 @@
 
 }
 
+.city_rigion{
+    margin: 10px 40px;
+    height: 40px;
+    display: inline-flex;
+    gap: 30px;
 
+}
+.city_rigion input{
+    width: 388px;
+}
+
+
+
+/* placeholder declear  */
+
+::placeholder{
+    padding: 0 10px;
+}
 /* create hover  */
 
 .customer_name:hover select{
@@ -91,7 +108,7 @@ input:hover{
     border: 2px solid #83f3d3;
 }
 
-/* colgroup#31c29c */
+
 
 /* .customer_name:hover option{
     background-color: #0000FF;

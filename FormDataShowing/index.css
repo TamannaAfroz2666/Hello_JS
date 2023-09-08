@@ -8,7 +8,7 @@
 
 .form_main{
     width: 100%;
-    height: 40em;
+    height: 58em;
     margin-top: 30px;
     padding: auto;
     background-image: url('../FormDataShowing/images/BackgroundChanging2.jpg');
@@ -22,11 +22,12 @@
 .customer_info{
     width: 80%;
     top: 50px;
+    bottom: 50px;
     position: relative;
     margin: auto;
     background-color: rgba(255, 255, 255, 0.507);
     margin-top: 60px;
-    height: 38em;
+    height: 50em;
     
 }
 .customer_info h1{
@@ -91,12 +92,19 @@
 }
 .sub_sub_input{
     display: flex;
+    gap: 0px;
 }
-.number_label{
-    font-size: 90px;
-
-
+.sub_sub_input input {
+    width: 380px;
+    height: 40px;
+    margin: 10px 0px 20px 40px;
 }
+.sub_sub_input label{
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.836);
+    padding: 5px 40px;
+}
+
 /* .sub_input.for_number label{
     color: rgba(0, 0, 0, 0.836);
     font-size: 18px;

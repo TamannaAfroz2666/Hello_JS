@@ -89,6 +89,25 @@
 .sub_input input{
     width: 388px;
 }
+.sub_sub_input{
+    display: flex;
+}
+.number_label{
+    font-size: 90px;
+
+
+}
+/* .sub_input.for_number label{
+    color: rgba(0, 0, 0, 0.836);
+    font-size: 18px;
+    font-weight: 700;
+    padding: 0 40px;
+} */
+/* .customer_number{
+    margin: 10px 40px;
+    height: 40px;
+
+} */
 
 
 
@@ -107,6 +126,8 @@ input:hover{
     background-color: #c5e2da;
     border: 2px solid #83f3d3;
 }
+
+
 
 
 

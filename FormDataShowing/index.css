@@ -113,9 +113,16 @@
     
 }
 input.checkbox_cls{
-    width: 20px;
-    height: 20px;
-    background-color: black;
+    width: 16px;
+    height: 16px;
+
+}
+.checkbox label{
+    right: 2.5em;
+    bottom: .2em;
+    position: relative;
+    font-size: 14px;
+    color: rgb(247, 120, 120);
 }
 
 /* .sub_input.for_number label{

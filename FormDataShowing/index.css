@@ -104,6 +104,13 @@
     color: rgba(0, 0, 0, 0.836);
     padding: 0px 40px;
 }
+.sub_input select{
+    width: 380px;
+    height: 40px;
+}
+.sub_input select option{
+   padding-left: 40px;
+}
 
 .form_head p {
     font-size: 16px;

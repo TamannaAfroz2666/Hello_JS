@@ -71,3 +71,11 @@
 
 /* create hover  */
 
+.customer_name:hover select{
+    background-color: rgb(152, 247, 215);
+    border: 0px solid rgb(152, 247, 215);
+}
+
+/* .customer_name:hover option{
+    background-color: #0000FF;
+} */

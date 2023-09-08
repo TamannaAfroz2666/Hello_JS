@@ -79,14 +79,14 @@
 
 }
 
-.city_rigion{
+.sub_input{
     margin: 10px 40px;
     height: 40px;
     display: inline-flex;
     gap: 30px;
 
 }
-.city_rigion input{
+.sub_input input{
     width: 388px;
 }
 

@@ -108,6 +108,15 @@
 .form_head p {
     font-size: 16px;
 }
+.checkbox input{
+    margin-left: 40px;
+    
+}
+input.checkbox_cls{
+    width: 20px;
+    height: 20px;
+    background-color: black;
+}
 
 /* .sub_input.for_number label{
     color: rgba(0, 0, 0, 0.836);

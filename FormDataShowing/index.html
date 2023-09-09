@@ -19,7 +19,8 @@
     <!-- google fonts end -->
 
     <!-- country name  -->
-    <link rel="stylesheet" href="//g.tutorialjinni.com/mojoaxel/bootstrap-select-country/dist/css/bootstrap-select-country.min.css" />
+    <link rel="stylesheet"
+        href="//g.tutorialjinni.com/mojoaxel/bootstrap-select-country/dist/css/bootstrap-select-country.min.css" />
 </head>
 
 <body>
@@ -34,7 +35,7 @@
             </p>
 
 
-            <form class="form_head" id="form_main" action="" method="post">
+            <form class="form_head" id="form_main" method="post">
                 <label for="name">Customer name <span>*</span></label> <br>
                 <div class="customer_name">
                     <select name="name" id="gender_list">
@@ -45,7 +46,7 @@
                         <option value="mrs">Mrs</option>
                     </select>
 
-                    <input type="text" class="first_name" id="first_name" value="" placeholder="Frist"
+                    <input type="text" class="first_name" id="first_name" value="" placeholder="Frist" name="name"
                         autocomplete="off">
 
                     <input type="text" class="initials_name" id="initials_name" value="" placeholder="Initials"
@@ -72,54 +73,55 @@
 
                     <input type="text" id="postal_id" value="" name="city" placeholder="Postal\ Zip code"
                         autocomplete="off">
-                        <select id="countryPicker" class="countrypicker  " data-flag="true" data-default="NO"></select>
-                        <!-- selectpicker -->
+                    <select id="countryPicker" class="countrypicker  " data-flag="true" data-default="NO"></select>
+                    <!-- selectpicker -->
                 </div>
 
                 <div class="sub_sub_input">
                     <div class="for_number">
                         <label class="number_label" for="number">Customer Number</label> <br>
-                        <input type="number" class="customer_number" id="number_id" value="" name="number" placeholder="### ####"
-                            autocomplete="off">
+                        <input type="number" class="customer_number" id="number_id" value="" name="number"
+                            placeholder="### ####" autocomplete="off">
 
                     </div>
-                   
+
                     <div class="for_fax">
                         <label for="fax">Customer Fax</label> <br>
-                    <input type="text"  id="fax_id" value="" name="fax" placeholder="### ####"
-                        autocomplete="off">
+                        <input type="text" id="fax_id" value="" name="fax" placeholder="### ####" autocomplete="off">
 
                     </div>
-                    
+
                 </div>
                 <div class="sub_sub_input">
                     <div class="for_number">
-                        <label  for="number">Customer date of birth</label> <br>
-                        <input type="date" class="calender_number" id="calender_id" value="" name="number"  autocomplete="off">
+                        <label for="number">Customer date of birth</label> <br>
+                        <input type="date" class="calender_number" id="calender_id" value="" name="number"
+                            autocomplete="off">
 
                     </div>
-                   
+
                     <div class="for_fax">
                         <label for="fax">Customer ID/ Email</label> <br>
-                    <input type="email"  id="email_id" value="" name="fax" placeholder=""
-                        autocomplete="off">
+                        <input type="email" id="email_id" value="" name="fax" placeholder="" autocomplete="off">
 
                     </div>
-                    
+
                 </div>
-                <p class="note">All customer information will be kept will description and will not be used for other marketing or advertisment purposes without customer approval.</p>
+                <p class="note">All customer information will be kept will description and will not be used for other
+                    marketing or advertisment purposes without customer approval.</p>
 
                 <div class="checkbox">
                     <!-- <input type="checkbox"  name="info" id="checkbox_id" value=""> -->
                     <input type="checkbox" class="checkbox_cls" id="horns" name="horns" />
-                    <label for="horns" >I allow my information to be used for future compagins</label>
+                    <label for="horns">I allow my information to be used for future compagins</label>
 
                 </div>
                 <div class="info_btn">
-                    <button type="submit" class="btn btn-info information" >Send Information</button>
+                    <button type="button" id="submitBtn" onclick="send_info()" class="btn btn-info information">Send
+                        Information</button>
 
                 </div>
-               
+
 
             </form>
         </div>
@@ -128,20 +130,21 @@
     </section>
 
 
-        <!-- <link rel="stylesheet" href="//cdn.tutorialjinni.com/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="//cdn.tutorialjinni.com/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="//cdn.tutorialjinni.com/bootstrap-select/1.12.4/css/bootstrap-select.min.css"> -->
 
 
-<!-- <select class="selectpicker countrypicker" data-flag="true"></select> -->
+    <!-- <select class="selectpicker countrypicker" data-flag="true"></select> -->
 
 
 
-            <!-- country list start -->
-<script src="//cdn.tutorialjinni.com/jquery/3.6.1/jquery.min.js"></script>
-<script src="//cdn.tutorialjinni.com/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="//cdn.tutorialjinni.com/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
-<script src="//g.tutorialjinni.com/mojoaxel/bootstrap-select-country/dist/js/bootstrap-select-country.min.js"></script>
-<!-- country list start -->
+    <!-- country list start -->
+    <script src="//cdn.tutorialjinni.com/jquery/3.6.1/jquery.min.js"></script>
+    <script src="//cdn.tutorialjinni.com/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdn.tutorialjinni.com/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+    <script
+        src="//g.tutorialjinni.com/mojoaxel/bootstrap-select-country/dist/js/bootstrap-select-country.min.js"></script>
+    <!-- country list start -->
 
 
     <!-- js and bootstrap links add  -->

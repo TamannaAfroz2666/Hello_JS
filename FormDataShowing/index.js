@@ -1,9 +1,19 @@
 var formMain = document.getElementById('form_main');
 
  function checkInfo(){
-     let checkBox = document.getElementById('horns').value;
-     console.log('the checkbox is checkinfo:', checkBox);
 
+     let checkBox = document.getElementById('horns');
+    //  console.log('the checkbox is checkinfo:', checkBox);
+    //  let firstName = document.getElementById('first_name').value;
+    //  console.log('the firstName is checkinfo:', firstName);
+    if (checkBox.checked == true){
+        return true;  
+    }
+    else{
+        // return alert('terms and condition appley');
+        return false;
+        // console.log('apply');
+    }
 
 }
 
@@ -12,17 +22,18 @@ var formMain = document.getElementById('form_main');
 
 
 function send_info() {
-    // console.log('hello js');
-    let  on;
-    let firstName = document.getElementById('first_name').value;  
-   
-    
-    // if  (checkBox === on){
-    //     console.log('first name is:', firstName);
-    // }
-    // else{
-    //     return alert('please accept the term and conditions');
-    // }
+    // let checked;
+    console.log('hello js');
+    let check_data = checkInfo();
+    console.log('datta is', check_data);
+    if(check_data == true ){
+        console.log('hghjn');
+
+    }
+    else{
+        return alert('do u agrree terms and condition fillup');
+    }
+  
 }
 
 

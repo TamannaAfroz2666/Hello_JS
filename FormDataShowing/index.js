@@ -1,17 +1,28 @@
 var formMain = document.getElementById('form_main');
 
+ function checkInfo(){
+     let checkBox = document.getElementById('horns').value;
+     console.log('the checkbox is checkinfo:', checkBox);
 
+
+}
 
 
 
 
 
 function send_info() {
+    // console.log('hello js');
+    let  on;
+    let firstName = document.getElementById('first_name').value;  
+   
     
-    console.log('hello js');
-    let firstName = document.getElementById('first_name').value;
-    console.log('first name is:', firstName);
-    // e.preventDefault()
+    // if  (checkBox === on){
+    //     console.log('first name is:', firstName);
+    // }
+    // else{
+    //     return alert('please accept the term and conditions');
+    // }
 }
 
 
@@ -30,7 +41,7 @@ function send_info() {
 //     var customerFax = document.getElementById('fax_id').value;
 //     var calenderDate = document.getElementById('calender_id').value;
 //     var emailId = document.getElementById('email_id').value;
-//     var checkBox = document.getElementById('horns').value;
+//    
 //     console.log('the gender is:', genderList);
 //     console.log('the initials name is:', initialName);
 //     console.log('the first name is:', firstName);
@@ -45,7 +56,7 @@ function send_info() {
 //     console.log('the fax is:', customerFax);
 //     console.log('the calender date is:', calenderDate);
 //     console.log('the email id is:', emailId);
-//     console.log('the checkbox is:', checkBox);
+//     
    
 
 // }

@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,16 +12,29 @@
     <!-- bootstrap links end  -->
 
 </head>
+
 <body>
 
     <section class="container main_class">
         <h1>Color code show</h1>
-
+        <div class="colorInput">
+            <div class="colorPrimary">
+                <label for="primary">Primary</label> <br>
+                <input type="color" id="primary" value="#FFC0CB" name="primary">
+                <small class="show_code" id="showCode">#FFC0CB</small>
+            </div>
+            <div class="colorSecondary">
+                <label for="secondary">Secondary</label> <br>
+                <input type="color" id="secondary" value="" name="secondary">
+                <small class="show_code" id="showCodeSecondary">#FFC0CB</small>
+            </div>
+        </div>
     </section>
-    
+
 
 
 
     <script src="../InputColorcodeShow/colorIndex.js"></script>
 </body>
+
 </html>

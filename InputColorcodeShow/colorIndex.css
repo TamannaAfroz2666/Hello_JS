@@ -17,3 +17,14 @@
     padding-top:  50px;
     color: rgb(250, 180, 180);
 }
+.colorInput{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.show_code{
+    padding-left: 10px;
+   bottom: .5em;
+   position:relative
+}

@@ -1,8 +1,7 @@
 const accesKey = "weUuR1uGDAZuNkPYUWXE-AiNh4T9_t6eWmf3thOFgzA";
 
 var searchFrom = document.getElementById('search_form');
-var searchBox = document.getElementById('search_box');
-console.log('search box', searchBox);
+
 var searchResult = document.getElementById('search_result');
 var searchShowBtn = document.getElementById('show_more_btn');
 // var searchBtn = document.getElementById('search_btn');
@@ -12,22 +11,21 @@ let page = 1;
 // let location;
 async function searchImage() {
     console.log('search image called')
+    var searchBox = document.getElementById('search_box').value;
+    console.log('search box', searchBox);
 
     //get the pathname here start
     const pathurl = new URL(
         `http://127.0.0.1:5500/ImageProcessing/base.html`
     ) ;
-    // const pathname = window.location.protocol(pathurl);
-    console.log('pathname is:', pathurl.pathname);
-        //get the pathname here start
+    let pathNameURl = pathurl.pathname;
+    console.log('pathname is:', pathNameURl);
+        //get the pathname here end
 
      
 
     keyword = searchBox.value;
     const url = `https://api.unsplash.com/search/photos?page=${page}&query=${keyword}&client_id=${accesKey}&per_page=12`;
-
-    // console.log('here is',url);
-
     const response = await fetch(url);
     const data = await response.json();
     console.log(data);
@@ -41,6 +39,12 @@ async function searchImage() {
        console.log('api path url is:', apiPathUrl);
        const Pathname = apiPathUrl.pathname;
        console.log('api path name', Pathname);
+      // get pathname from api end 
+
+    //   add new api create 
+
+    const newurl = pathurl + "?" + Pathname;
+    console.log('new url is ', newurl);
 
        
     dataResult.map((result) => {

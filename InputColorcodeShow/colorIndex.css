@@ -10,3 +10,10 @@
     background-color: rgb(180, 248, 225);
     height: 20em;
 }
+
+.main_class h1{
+    text-align: center;
+    text-shadow: 5px 1px 1px #FFC0CB;
+    padding-top:  50px;
+    color: rgb(250, 180, 180);
+}

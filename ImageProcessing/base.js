@@ -9,9 +9,17 @@ var searchShowBtn = document.getElementById('show_more_btn');
 
 let keyword = "";
 let page = 1;
-
+// let location;
 async function searchImage() {
     console.log('search image called')
+
+    //get the pathname here start
+    const pathurl = new URL(
+        `http://127.0.0.1:5500/ImageProcessing/base.html`
+    ) ;
+    // const pathname = window.location.protocol(pathurl);
+    console.log('pathname is:', pathurl.pathname);
+        //get the pathname here start
 
     keyword = searchBox.value;
     const url = `https://api.unsplash.com/search/photos?page=${page}&query=${keyword}&client_id=${accesKey}&per_page=12`;
@@ -23,7 +31,11 @@ async function searchImage() {
     console.log(data);
     const dataResult = data.results;
     console.log('result is', dataResult);
+
+    // const pathname = window.location.hostname();
+       
     dataResult.map((result) => {
+        
         const image = document.createElement('img');
         image.src = result.urls.small;
         const imageLink = document.createElement('a');

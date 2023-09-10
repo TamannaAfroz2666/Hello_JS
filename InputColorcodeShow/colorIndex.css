@@ -1,0 +1,12 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main_class{
+    top: 10px;
+    position: relative;
+    background-color: rgb(180, 248, 225);
+    height: 20em;
+}

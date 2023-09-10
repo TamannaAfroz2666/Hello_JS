@@ -21,6 +21,8 @@ async function searchImage() {
     console.log('pathname is:', pathurl.pathname);
         //get the pathname here start
 
+     
+
     keyword = searchBox.value;
     const url = `https://api.unsplash.com/search/photos?page=${page}&query=${keyword}&client_id=${accesKey}&per_page=12`;
 
@@ -32,7 +34,14 @@ async function searchImage() {
     const dataResult = data.results;
     console.log('result is', dataResult);
 
-    // const pathname = window.location.hostname();
+
+
+       // get pathname from api 
+       const apiPathUrl = new URL(url);
+       console.log('api path url is:', apiPathUrl);
+       const Pathname = apiPathUrl.pathname;
+       console.log('api path name', Pathname);
+
        
     dataResult.map((result) => {
         

@@ -43,7 +43,7 @@ async function searchImage() {
 
     //   add new api create 
 
-    const newurl = pathurl + "?" + Pathname;
+    const newurl = pathurl + Pathname + "?" + searchBox;
     console.log('new url is ', newurl);
 
        

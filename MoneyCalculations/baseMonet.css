@@ -119,11 +119,21 @@
 }
 .moneyDeposit{
     width: 300px;
-    height: 120px;
+    height: 190px;
     background-color: 	#ee77ee;
     border-radius: 10px;
 
 }
+.moneyDeposit label{
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 0px 10px 20px;
+}
+.moneyDeposit input{
+    width: 250px;
+}
+
 .moneyWithdraw{
     width: 300px;
     height: 120px;

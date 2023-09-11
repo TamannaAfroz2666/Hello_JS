@@ -30,3 +30,9 @@
     color: white;
     text-shadow: 2px 2px rgb(94, 56, 233);
 }
+.ammount_type{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}

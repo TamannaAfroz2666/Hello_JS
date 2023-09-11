@@ -15,17 +15,17 @@ async function searchImage() {
     console.log('search box', searchBox);
 
     //get the pathname here start
-    const pathurl = new URL(
+    var pathurl = new URL(
         `http://127.0.0.1:5500/ImageProcessing/base.html`
     ) ;
-    let pathNameURl = pathurl.pathname;
+    var pathNameURl = pathurl.pathname;
     console.log('pathname is:', pathNameURl);
         //get the pathname here end
 
      
 
     keyword = searchBox.value;
-    const url = `https://api.unsplash.com/search/photos?page=${page}&query=${keyword}&client_id=${accesKey}&per_page=12`;
+    var url = `https://api.unsplash.com/search/photos?page=${page}&query=${keyword}&client_id=${accesKey}&per_page=12`;
     const response = await fetch(url);
     const data = await response.json();
     console.log(data);
@@ -35,15 +35,15 @@ async function searchImage() {
 
 
        // get pathname from api 
-       const apiPathUrl = new URL(url);
+       var apiPathUrl = new URL(url);
        console.log('api path url is:', apiPathUrl);
-       const Pathname = apiPathUrl.pathname;
+       var Pathname = apiPathUrl.pathname;
        console.log('api path name', Pathname);
       // get pathname from api end 
 
     //   add new api create 
 
-    const newurl = pathurl + Pathname + "?" + searchBox;
+    var newurl = pathurl + Pathname + "?" + searchBox;
     console.log('new url is ', newurl);
 
        
@@ -63,8 +63,12 @@ async function searchImage() {
     searchShowBtn.style.display = 'block';
 }
 searchFrom.addEventListener("submit", (e) => {
+
+    // var newurl;
     e.preventDefault();
     searchImage()
+    // window.location.assign(newurl);
+    // window.location.replace(newurl)
     // handle submit
 });
 

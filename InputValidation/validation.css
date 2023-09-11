@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.input_group{
+    height: 38em;
+    margin: auto;
+    margin-top: 20px;
+    background-image: url(../InputValidation/images/background1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    box-shadow: 10px 4px rgb(236, 204, 204);
+}

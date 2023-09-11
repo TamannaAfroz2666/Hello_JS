@@ -6,7 +6,7 @@
 }
 
 .input_group{
-    height: 40em;
+    height: 44em;
     margin: auto;
     margin-top: 20px;
     background-image: url(../InputValidation/images/background1.jpg);
@@ -18,7 +18,7 @@
 }
 .login_section{
     width: 28%;
-    height: 35em;
+    height: 40em;
     top: 40px;
     position: relative;
     margin: auto;
@@ -34,9 +34,7 @@
     font-weight: 700;
 
 }
-/* .get_info{
-    margin-top: 30px;
-} */
+
 .get_info label {
     padding: 30px 0px 20px 30px;
     font-size: 14px;
@@ -86,7 +84,7 @@
 .login_section h5{
     text-align: center;
     font-size: 12px;
-    padding: 20px 0;
+    padding:  40px 0 20px 0;
     color: rgba(12, 12, 12, 0.815);
     font-weight: bold;
 }
@@ -116,5 +114,25 @@
     background-color: #CD5C5C;
     border-radius: 100%;
     color: #fff;
+
+}
+.textfield h6{
+    padding: 50px 0 2px 0;
+    text-align: center;
+    font-size: 12px;
+    color: rgba(12, 12, 12, 0.815);
+    font-weight: bold;
+}
+
+.registerPage{
+    text-align: center;
+    
+}
+.registerPage a{
+    text-decoration: none;
+    font-size: 14px;
+    color: rgba(12, 12, 12, 0.815);
+    text-transform: uppercase;
+    font-weight: 700;
 
 }

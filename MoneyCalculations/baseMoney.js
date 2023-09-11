@@ -11,10 +11,12 @@ function depositAmount(){
 
     let showDeposite = document.getElementById('show_deposite').innerHTML = newDepositAmount;
     console.log('Show deposite amount is', showDeposite);
+  
+  
     let showBalance = document.getElementById('show_balance').innerText = newDepositAmount;
     console.log('Show balance is', showBalance);
 
-    // set the empaty string when click the button 
+    // set the empaty string when click the button to get the vlue 
     depositeAmmount.value = '';
    
 }

@@ -107,3 +107,26 @@
 /* closed money transfer type  */
 
 /* add money type start  */
+
+.moneyAdd{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+
+}
+.moneyDeposit{
+    width: 300px;
+    height: 120px;
+    background-color: 	#ee77ee;
+    border-radius: 10px;
+
+}
+.moneyWithdraw{
+    width: 300px;
+    height: 120px;
+    background-color: 	#d3f768;
+    border-radius: 10px;
+}

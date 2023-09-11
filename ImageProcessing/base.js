@@ -9,6 +9,8 @@ var searchShowBtn = document.getElementById('show_more_btn');
 let keyword = "";
 let page = 1;
 // let location;
+var SourceUrl = window.location.origin + window.location.pathname;
+
 async function searchImage() {
     console.log('search image called')
     var searchBox = document.getElementById('search_box').value;
@@ -17,12 +19,12 @@ async function searchImage() {
     //get the pathname here start
     var pathurl = new URL(
         `http://127.0.0.1:5500/ImageProcessing/base.html`
-    ) ;
+    );
     var pathNameURl = pathurl.pathname;
     console.log('pathname is:', pathNameURl);
-        //get the pathname here end
+    //get the pathname here end
 
-     
+
 
     keyword = searchBox.value;
     var url = `https://api.unsplash.com/search/photos?page=${page}&query=${keyword}&client_id=${accesKey}&per_page=12`;
@@ -34,21 +36,23 @@ async function searchImage() {
 
 
 
-       // get pathname from api 
-       var apiPathUrl = new URL(url);
-       console.log('api path url is:', apiPathUrl);
-       var Pathname = apiPathUrl.pathname;
-       console.log('api path name', Pathname);
-      // get pathname from api end 
+    // get pathname from api 
+    var apiPathUrl = new URL(url);
+    console.log('api path url is:', apiPathUrl);
+    var Pathname = apiPathUrl.pathname;
+    console.log('api path name', Pathname);
+    // get pathname from api end 
 
     //   add new api create 
 
-    var newurl = pathurl + Pathname + "?" + searchBox;
+    var newurl = SourceUrl + "?search_by=" + searchBox;
     console.log('new url is ', newurl);
+    window.location.replace(newurl)
 
-       
+
+
     dataResult.map((result) => {
-        
+
         const image = document.createElement('img');
         image.src = result.urls.small;
         const imageLink = document.createElement('a');

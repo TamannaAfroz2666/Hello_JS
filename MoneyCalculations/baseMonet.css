@@ -22,3 +22,11 @@
     height: 35em;
     background-color: rgba(255, 192, 203, 0.541);
 }
+.parent_node h1{
+    font-size: 35px;
+    text-align: center;
+    padding-top: 25px;
+    font-weight: 700;
+    color: white;
+    text-shadow: 2px 2px rgb(94, 56, 233);
+}

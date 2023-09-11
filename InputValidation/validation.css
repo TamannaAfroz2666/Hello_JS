@@ -5,7 +5,7 @@
 }
 
 .input_group{
-    height: 38em;
+    height: 40em;
     margin: auto;
     margin-top: 20px;
     background-image: url(../InputValidation/images/background1.jpg);
@@ -14,4 +14,14 @@
     background-size: cover;
     border-radius: 8px;
     box-shadow: 10px 4px rgb(236, 204, 204);
+}
+.login_section{
+    width: 28%;
+    height: 35em;
+    top: 40px;
+    position: relative;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.973);
+    border-radius: 10px;
+    box-shadow: 4px 4px white;
 }

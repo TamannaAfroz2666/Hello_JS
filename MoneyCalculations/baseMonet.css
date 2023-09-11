@@ -31,8 +31,31 @@
     text-shadow: 2px 2px rgb(94, 56, 233);
 }
 .ammount_type{
-    width: 60%;
+    width: 80%;
     margin: auto;
     display: flex;
+    gap: 30px;
     justify-content: space-between;
+}
+.deposite{
+    background-color:  	#7df1b7;
+    height: 100px;
+    width: 200px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+.Withdraw{
+    background-color: #f3cd5d;
+    height: 100px;
+    width: 200px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+.balance{
+    background-color: #d280ee;
+    height: 100px;
+    width: 200px;
+    margin-top: 50px;
+    border-radius: 10px;
+
 }

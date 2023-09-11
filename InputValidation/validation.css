@@ -90,3 +90,7 @@
     color: rgba(12, 12, 12, 0.815);
     font-weight: bold;
 }
+.social_links{
+    display: inline-flex;
+    gap: 30px;
+}

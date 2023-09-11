@@ -91,6 +91,30 @@
     font-weight: bold;
 }
 .social_links{
+
     display: inline-flex;
-    gap: 30px;
+    margin-left: 6rem;
+    gap: 10px;
+    font-size: 18px;
+    
+}
+.facebook{
+    padding: 8px;
+    background-color: #1877f2;
+    border-radius: 100%;
+    color: #fff;
+
+}
+.twitter{
+    padding: 8px;
+    background-color: #00CED1;
+    border-radius: 100%;
+    color: #fff;
+}
+.google{
+    padding: 8px;
+    background-color: #CD5C5C;
+    border-radius: 100%;
+    color: #fff;
+
 }

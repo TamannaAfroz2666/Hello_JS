@@ -16,4 +16,9 @@
 }
 .parent_node{
     width: 80%;
+    margin: auto;
+    top: 20px;
+    position: relative;
+    height: 35em;
+    background-color: rgba(255, 192, 203, 0.541);
 }

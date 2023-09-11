@@ -54,9 +54,21 @@ function withdrawAmount() {
     const showWithdrawValue = parseFloat(showWithrawInt);
     console.log('show tje accurate withdraw money', showWithdrawValue);
 
-
+//  calculate the total withdraw section 
     const TotalWithdraw = showWithdrawValue + withdrawValue;
     showWithdraw.innerText = TotalWithdraw;
+
+    //  calculate the totat balance section section
+
+    const showBalance = document.getElementById('show_balance');
+    const showBalanceString = showBalance.innerText;
+    const showBalanceValue = parseFloat(showBalanceString);
+    console.log('the accurate balance is:', showBalanceValue);
+
+    // calculate section 
+
+    const totalMoney = showBalanceValue - withdrawValue;
+    showBalance.innerText = totalMoney;
 
 
 }

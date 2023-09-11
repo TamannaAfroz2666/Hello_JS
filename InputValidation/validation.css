@@ -34,3 +34,26 @@
     font-weight: 700;
 
 }
+/* .get_info{
+    margin-top: 30px;
+} */
+.get_info label {
+    padding: 30px 0px 20px 30px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+.get_info input{
+    width: 250px;
+    height: 2.5em;
+    margin-left: 30px;
+    box-sizing: border-box;
+    border: 3px solid rgba(160, 153, 153, 0.747);
+    border-width:0px 0px 2px 0px;
+    box-shadow: 4px 4px whitesmoke;
+}
+::placeholder{
+    padding-left: 10px;
+    font-size: 12PX;
+}

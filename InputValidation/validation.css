@@ -77,9 +77,8 @@
     padding: 5px 100px;
     border: 0;
     border-radius: 50px;
-    background-image: linear-gradient(to right, rgb(91, 91, 235) , #6c16bd,#14588f1c);
+    background-image: linear-gradient(to right, rgb(8, 8, 212) ,#0885ec91);
     text-transform: uppercase;
     font-weight: 700;
-    /* color: rgb(19, 17, 17); */
-    color: #fff;
+    color: rgb(22, 18, 18);
 }

@@ -35,3 +35,16 @@ function depositAmount(){
 
    
 }
+
+function withdrawAmount() {
+    console.log('hello ammount');
+
+    // access input field 
+    const withdrawAmount = document.getElementById('withdrawAmmount').value;
+    const withdrawValue = parseFloat(withdrawAmount);
+    console.log('Withdraw ammount on integer :', withdrawValue);
+
+        // input feild empty when the value geted 
+        withdrawAmmount.value = '' ;
+
+}

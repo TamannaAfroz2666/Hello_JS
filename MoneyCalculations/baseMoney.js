@@ -45,6 +45,18 @@ function withdrawAmount() {
     console.log('Withdraw ammount on integer :', withdrawValue);
 
         // input feild empty when the value geted 
-        withdrawAmmount.value = '' ;
+    withdrawAmmount.value = '' ;
+
+    // acces the withdraw field 
+
+    const showWithdraw = document.getElementById('show_withdraw');
+    const showWithrawInt = showWithdraw.innerText;
+    const showWithdrawValue = parseFloat(showWithrawInt);
+    console.log('show tje accurate withdraw money', showWithdrawValue);
+
+
+    const TotalWithdraw = showWithdrawValue + withdrawValue;
+    showWithdraw.innerText = TotalWithdraw;
+
 
 }

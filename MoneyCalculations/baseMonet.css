@@ -38,6 +38,7 @@
     gap: 30px;
     justify-content: space-between;
 }
+/* start money transfer type  */
 .deposite{
     background-color:  	#7df1b7;
     height: 100px;
@@ -52,21 +53,33 @@
     color: #fff;
     font-weight: 600;
 }
+.deposite small{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+    padding-left: 30px;
+}
 
-.Withdraw{
+.withdraw{
     background-color: #f3cd5d;
     height: 100px;
     width: 200px;
     margin-top: 50px;
     border-radius: 10px;
 }
-.Withdraw h4{
+.withdraw h4{
     font-size: 24px;
     text-align: center;
     padding-top: 5px;
     color: #fff;
     font-weight: 600;
 
+}
+.withdraw small{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+    padding-left: 30px;
 }
 .balance{
     background-color: #d280ee;
@@ -84,3 +97,11 @@
     font-weight: 600;
 
 }
+.balance small{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+    padding-left: 30px;
+}
+
+/* closed money transfer type  */

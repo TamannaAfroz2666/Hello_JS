@@ -21,6 +21,7 @@
     position: relative;
     height: 35em;
     background-color: rgba(255, 192, 203, 0.541);
+    overflow: hidden;
 }
 .parent_node h1{
     font-size: 35px;
@@ -44,6 +45,14 @@
     margin-top: 50px;
     border-radius: 10px;
 }
+.deposite h4 {
+    font-size: 24px;
+    text-align: center;
+    padding-top: 5px;
+    color: #fff;
+    font-weight: 600;
+}
+
 .Withdraw{
     background-color: #f3cd5d;
     height: 100px;
@@ -51,11 +60,27 @@
     margin-top: 50px;
     border-radius: 10px;
 }
+.Withdraw h4{
+    font-size: 24px;
+    text-align: center;
+    padding-top: 5px;
+    color: #fff;
+    font-weight: 600;
+
+}
 .balance{
     background-color: #d280ee;
     height: 100px;
     width: 200px;
     margin-top: 50px;
     border-radius: 10px;
+
+}
+.balance h4{
+    font-size: 24px;
+    text-align: center;
+    padding-top: 5px;
+    color: #fff;
+    font-weight: 600;
 
 }

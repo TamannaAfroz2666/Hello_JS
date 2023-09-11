@@ -132,7 +132,27 @@
 }
 .moneyDeposit input{
     width: 250px;
+    border-radius: 5px;
+    border: 0;
+    padding: 10px;
+    margin-left: 20px;
 }
+ ::placeholder{
+    padding-left: 3px;
+}
+.moneyDeposit button{
+    margin: 20px 0 0 80px;
+    border: 0;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: #197ab3;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    
+}
+
+
 
 .moneyWithdraw{
     width: 300px;

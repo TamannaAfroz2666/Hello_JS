@@ -117,11 +117,13 @@
     gap: 40px;
 
 }
+/* styled money deposite  */
 .moneyDeposit{
     width: 300px;
     height: 190px;
     background-color: 	#ee77ee;
     border-radius: 10px;
+    box-shadow: 4px 4px #fff;
 
 }
 .moneyDeposit label{
@@ -152,11 +154,37 @@
     
 }
 
-
+/* styled money deposite end */
+/* styled money withdraw start  */
 
 .moneyWithdraw{
     width: 300px;
-    height: 120px;
+    height: 190px;
     background-color: 	#d3f768;
     border-radius: 10px;
+    box-shadow: 4px 4px #fff;
+}
+.moneyWithdraw label{
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 0px 10px 20px;
+}
+.moneyWithdraw input{
+    width: 250px;
+    border-radius: 5px;
+    border: 0;
+    padding: 10px;
+    margin-left: 20px;
+}
+.moneyWithdraw button{
+    margin: 20px 0 0 80px;
+    border: 0;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: #197ab3;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    
 }

@@ -14,6 +14,7 @@ function depositAmount(){
     let showBalance = document.getElementById('show_balance').innerText = newDepositAmount;
     console.log('Show balance is', showBalance);
 
-    // let addvalue = depositAmount + addvalue;
-    // console.log('total value is', addvalue);
+    // set the empaty string when click the button 
+    depositeAmmount.value = '';
+   
 }

@@ -82,21 +82,44 @@ input[type="radio"] {
 
 
 .getInfo input {
-    width: 250px;
-    height: 2.5em;
+    width: 200px;
+    height: 2.4em;
     /* margin-left: 30px; */
     box-sizing: border-box;
     border: 3px solid rgba(160, 153, 153, 0.747);
     border-width: 0px 0px 2px 0px;
     /* box-shadow: 4px 4px whitesmoke; */
-    margin: 30px 0 -10px 30px;
+    margin: 30px 0 -10px auto;
+
+}
+.getInfo i{
+    font-size: 20px;
+    margin: 0px 0px 0px 0px;
+    left: 1em;
+    top: 28.5px;
+    position: relative;
+    background-color: rgb(193, 241, 243);
+    padding: 10px 10px;
+     border-radius: 12px 3px 3px 12px;
+    display: block;
+
 }
 
 ::placeholder {
-    padding-left: 10px;
+    padding-left: 30px;
     font-size: 14px;
     text-transform: lowercase;
 }
+.sub_clas{
+    display: flex;
+}
+/* .fa-regular{
+    width: 30px;
+    
+    color: red;
+    left: 1rem;
+    position: relative;
+} */
 .button_part {
     margin: 30px 0 0 35px;
 

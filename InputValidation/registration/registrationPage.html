@@ -1,21 +1,99 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>registration</title>
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="../registration/registration.css">
+
     <!-- bootstrap links start  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <!-- bootstrap links end  -->
-    <link rel="stylesheet" href="registration.css">
+
+    <!-- google fonts start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <!-- google fonts end -->
+    <!-- font awesome  -->
+    <script src="https://kit.fontawesome.com/63df41bca6.js" crossorigin="anonymous"></script>
+    <!-- font awesome end  -->
 </head>
+
 <body>
-    <section>
-        <div class="conainer">
-            
+    <section class="container1 input_group">
+        <div class="login_section">
+            <h4>Registration</h4>
+            <div class="get_info">
+                <form action="" id="loginForm" method="post">
+                    <div>
+                        <label for="name">Email</label> <br>
+                        <!-- <i class="fa-regular fa-user"></i> -->
+                        <input type="email" placeholder="user email" name="name" value="" id="email" autocomplete="off">
+                        <span id="errorMessages" style="color: red;"></span>
+                    </div>
+                    <div>
+                        <label for="password">Password</label> <br>
+                        <input type="password" placeholder="username" name="password" value="" id="password"
+                            autocomplete="off">
+                        <span id="errorMessages1" style="color: red;"></span>
+                    </div>
+
+
+                    <!-- <div id="errorMessages" style="color: red;"></div> -->
+
+                    <!-- <input style="font-family: 'Font Awesome 5 free'; font-weight: 700;" type="email" placeholder=" &#xf007;   username" name="name" value="" id="user_email" autocomplete="off" required > -->
+                    <!-- <span id="errorMessages" style="color: red;"></span> -->
+
+
+
+                    <!-- <span id="errorMessages" style="color: red;"></span> -->
+                    <!-- <input style="font-family: 'Font Awesome 5 free'; font-weight: 700;" type="password" placeholder=" &#xf007; type your password" name="password" value="" id="password_id" autocomplete="off" required > -->
+
+
+            </div>
+            <div class="forgot_pass">
+                <a href="#"><span>Forgot Password?</span></a>
+
+            </div>
+
+            <div class="button_part">
+               <button type="submit" id="button_id">Login</button>
+            </div>
+
+            </form>
+            <!-- <div id="errorMessages" style="color: red;"></div> -->
+
+
+            <h5>Or sing up using</h5>
+            <div class="social_links">
+                <div class="facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+                <div class="twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+                <div class="google">
+                    <i class="fa-brands fa-google"></i>
+                </div>
+            </div>
+            <div class="textfield">
+                <h6>Or sing up using</h6>
+
+            </div>
+
+
+            <div class="registerPage">
+                <a href="../FormDataShowing/index.html">Sing up</a>
+            </div>
+
         </div>
 
+
     </section>
-    
+    <!-- <script src="../InputValidation/validation.js"></script> -->
+    <script src="../InputValidation/validationNew.js"></script>
 </body>
+
 </html>

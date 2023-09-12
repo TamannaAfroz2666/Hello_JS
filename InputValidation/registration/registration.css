@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.input_group {
+    width: 58%;
+    height: 44em;
+    margin: auto;
+    margin-top: 20px;
+    background-color: rgb(177, 210, 238);
+    border-radius: 8px;
+    box-shadow: 10px 4px rgb(236, 204, 204);
+}
+
+.login_section {
+    width: 40%;
+    height: 40em;
+    top: 40px;
+    position: relative;
+    margin: auto;
+    background-color: rgb(235, 225, 225);
+    border-radius: 10px;
+    box-shadow: 8px 7px white;
+}
+
+.login_section h4 {
+    text-align: center;
+    padding-top: 45px;
+    color: black;
+    font-weight: 700;
+
+}
+
+.get_info label {
+    padding: 30px 0px 20px 30px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+.get_info input {
+    width: 250px;
+    height: 2.5em;
+    margin-left: 30px;
+    box-sizing: border-box;
+    border: 3px solid rgba(160, 153, 153, 0.747);
+    border-width: 0px 0px 2px 0px;
+    box-shadow: 4px 4px whitesmoke;
+}
+
+::placeholder {
+    padding-left: 10px;
+    font-size: 14px;
+    text-transform: lowercase;
+}
+
+.forgot_pass {
+    width: 280px;
+    margin-top: 20px;
+    text-align: right;
+}
+
+.forgot_pass a {
+    text-decoration: none;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.658);
+    font-weight: 700;
+}
+
+.button_part {
+    margin: 30px 0 0 35px;
+
+}
+
+.button_part button {
+    padding: 5px 100px;
+    border: 0;
+    border-radius: 50px;
+    background-image: linear-gradient(to right, rgb(8, 8, 212), #0885ec91);
+    text-transform: uppercase;
+    font-weight: 700;
+    color: rgb(22, 18, 18);
+}
+
+.login_section h5 {
+    text-align: center;
+    font-size: 12px;
+    padding: 40px 0 20px 0;
+    color: rgba(12, 12, 12, 0.815);
+    font-weight: bold;
+}
+
+.social_links {
+
+    display: inline-flex;
+    margin-left: 6rem;
+    gap: 10px;
+    font-size: 18px;
+
+}
+
+.facebook {
+    padding: 8px;
+    background-color: #1877f2;
+    border-radius: 100%;
+    color: #fff;
+
+}
+
+.twitter {
+    padding: 8px;
+    background-color: #00CED1;
+    border-radius: 100%;
+    color: #fff;
+}
+
+.google {
+    padding: 8px;
+    background-color: #CD5C5C;
+    border-radius: 100%;
+    color: #fff;
+
+}
+
+.textfield h6 {
+    padding: 50px 0 2px 0;
+    text-align: center;
+    font-size: 12px;
+    color: rgba(12, 12, 12, 0.815);
+    font-weight: bold;
+}
+
+.registerPage {
+    text-align: center;
+
+}
+
+.registerPage a {
+    text-decoration: none;
+    font-size: 14px;
+    color: rgba(12, 12, 12, 0.815);
+    text-transform: uppercase;
+    font-weight: 700;
+
+}

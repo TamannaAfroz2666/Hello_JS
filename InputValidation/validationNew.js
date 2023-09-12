@@ -34,7 +34,7 @@ function validateLoginForm(event) {
     // If all validations pass, submit the form
     else{
         alert('Login successful!');
-        window.location.href="../ImageProcessing/base.html";
+        window.location.href="./registration/registrationPage.html";
         
 
     };

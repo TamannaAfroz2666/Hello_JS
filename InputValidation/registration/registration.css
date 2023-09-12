@@ -115,6 +115,11 @@ input[type="radio"] {
 .underInput{
     margin-top: 40px;
 }
+.privacyLink{
+    font-size: 14px;
+    padding: 20px 22px;
+    color: rgb(124, 100, 100);
+}
 
 .button_part {
     margin: 30px 0 0 35px;

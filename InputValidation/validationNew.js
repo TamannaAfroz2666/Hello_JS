@@ -10,22 +10,27 @@ function validateLoginForm(event) {
     const errorMessages1 = document.getElementById('errorMessages1');
     errorMessages.innerHTML = '';
     errorMessages1.innerHTML = '';
-
-
+  
     // Validate email
-    if (!validateEmail(email.value) && !validatePassword(password.value)) {
-        errorMessages.innerHTML += 'Please enter a valid email address.';
-        errorMessages1.innerHTML += 'Please enter a valid password.';
-        return;
-    }
-    else if (!validateEmail(email.value)) {
-        errorMessages.innerHTML += 'Please enter a valid email address.';
+    if ((email.value === "") && password.value === "") {
+        errorMessages.innerHTML += 'Please enter a email address.';
+        errorMessages1.innerHTML += 'Please enter a  password.';
+        email.value = '';
+        password.value = '';
         return;
     }
 
+    if (!validateEmail(email.value)) {
+        errorMessages.innerHTML += 'Please enter a valid email address.';
+        email.value = '';
+        password.value = '';
+        return;
+    }
     // Validate password
-    else if (!validatePassword(password.value)) {
+    if (!validatePassword(password.value)) {
         errorMessages1.innerHTML += 'Please enter a valid password.';
+        email.value = '';
+        password.value = '';
         return;
     }
 

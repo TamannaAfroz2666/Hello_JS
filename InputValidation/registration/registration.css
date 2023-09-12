@@ -40,15 +40,25 @@
     width: 270px;
     margin: auto;
 }
+/* .radioInfo{
+    width: 200px;
+    display: inline-flex;
+}
+.personalId{
+    width: 0;
+    height: 0;
+    font-size: 40px;
 
-.get_info label {
+} */
+
+.getInfo label {
     padding: 30px 0px 20px 30px;
     font-size: 14px;
     font-weight: 400;
 }
 
 
-.get_info input {
+.getInfo input {
     width: 250px;
     height: 2.5em;
     margin-left: 30px;

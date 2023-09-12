@@ -24,23 +24,33 @@
 <body>
     <section class="container1 input_group">
         <div class="login_section">
-            <h4>Registration</h4> 
-            <span><hr></span>
+            <h4>Registration</h4>
+            <span>
+                <hr>
+            </span>
             <div class="get_info">
                 <form action="" id="loginForm" method="post">
-                    <div>
-                        <label for="name">Email</label> <br>
-                        <!-- <i class="fa-regular fa-user"></i> -->
-                        <input type="email" placeholder="user email" name="name" value="" id="email" autocomplete="off">
-                        <span id="errorMessages" style="color: red;"></span>
-                    </div>
-                    <div>
-                        <label for="password">Password</label> <br>
-                        <input type="password" placeholder="username" name="password" value="" id="password"
-                            autocomplete="off">
-                        <span id="errorMessages1" style="color: red;"></span>
-                    </div>
+                    <div class="radioInfo">
+                        <input type="radio" name="personal" class="personalId" id="personal"><label
+                            for="personal">Personal</label>
 
+                        <input type="radio" name="company" id="company"><label for="company">Company</label>
+                    </div>
+                    <div class="getInfo">
+                        <div>
+                            <label for="name">Email</label> <br>
+                            <!-- <i class="fa-regular fa-user"></i> -->
+                            <input type="email" placeholder="user email" name="name" value="" id="email"
+                                autocomplete="off">
+                            <span id="errorMessages" style="color: red;"></span>
+                        </div>
+                        <div>
+                            <label for="password">Password</label> <br>
+                            <input type="password" placeholder="username" name="password" value="" id="password"
+                                autocomplete="off">
+                            <span id="errorMessages1" style="color: red;"></span>
+                        </div>
+                    </div>
             </div>
             <div class="button_part">
                 <button type="submit" id="button_id">Submit</button>

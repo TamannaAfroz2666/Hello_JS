@@ -6,6 +6,8 @@ function submit_info (){
     const password = document.getElementById('password_id').value;
     console.log('password is', password);
 
+    const errorMessages = document.getElementById('errorMessages');
+
     // value refresh when get a needed one
     user_email.value = '';
     password_id.value = '';
@@ -19,6 +21,7 @@ function submit_info (){
         alert ('Please enter a valid password');
         return;
     }
+    alert('login successfully');
 }
 
 //function valid emation create

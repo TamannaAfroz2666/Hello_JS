@@ -12,10 +12,13 @@ function submit_info (){
 
     // check email valid or not 
     if(!validateEmail(user_email.value)){
-        alert('please enter a valid email address')
+        alert('please enter a valid email address');
         return;
     }
-    
+    if(! validatePassword(password_id.value)){
+        alert ('Please enter a valid password');
+        return;
+    }
 }
 
 //function valid emation create

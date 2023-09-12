@@ -15,27 +15,30 @@ function validateLoginForm(event) {
     if ((email.value === "") && password.value === "") {
         errorMessages.innerHTML += 'Please enter a email address.';
         errorMessages1.innerHTML += 'Please enter a  password.';
-        email.value = '';
-        password.value = '';
+       
         return;
     }
 
     if (!validateEmail(email.value)) {
         errorMessages.innerHTML += 'Please enter a valid email address.';
-        email.value = '';
-        password.value = '';
+       
         return;
     }
     // Validate password
     if (!validatePassword(password.value)) {
         errorMessages1.innerHTML += 'Please enter a valid password.';
-        email.value = '';
-        password.value = '';
+      
         return;
     }
 
     // If all validations pass, submit the form
-    alert('Login successful!');
+    else{
+        alert('Login successful!');
+        window.location.href="../ImageProcessing/base.html";
+        
+
+    };
+    
 }
 
 function validateEmail(email) {

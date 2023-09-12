@@ -24,3 +24,13 @@ function validateEmail(email){
     const emailRange = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     return emailRange.test(email);
 }
+
+function validatePassword(password){
+    const minLength = 8;
+    const upperCase =/[A-Z]/.test(password);
+    const lowerCase = /[a-z]/.test(password);
+    const hasNumber = /\d/.test(password);
+
+    return (password.length >= minLength && upperCase && lowerCase && hasNumber);
+
+}

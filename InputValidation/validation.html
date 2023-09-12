@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,38 +18,53 @@
     <!-- google fonts end -->
     <!-- font awesome  -->
     <script src="https://kit.fontawesome.com/63df41bca6.js" crossorigin="anonymous"></script>
-      <!-- font awesome end  -->
+    <!-- font awesome end  -->
 </head>
+
 <body>
     <section class="container input_group">
         <div class="login_section">
             <h4>Login</h4>
             <div class="get_info">
-                <form action="" method="post" id="loginForm">
+                <form action="" id="loginForm">
+                    <div>
+                        <label for="name">Email</label> <br>
+                        <!-- <i class="fa-regular fa-user"></i> -->
+                        <input type="email" placeholder="user email" name="name" value="" id="email" autocomplete="off">
+                        <span id="errorMessages" style="color: red;"></span>
+                    </div>
+                    <div>
+                        <label for="password">Password</label> <br>
+                        <input type="password" placeholder="username" name="password" value="" id="password"
+                            autocomplete="off">
+                        <span id="errorMessages1" style="color: red;"></span>
+                    </div>
 
-            
-                <label for="name">Email</label> <br>
-                <!-- <i class="fa-regular fa-user"></i>
-                <input  type="text" placeholder="username" name="name" value="" id="user_id" autocomplete="off" > -->
-                    <input style="font-family: 'Font Awesome 5 free'; font-weight: 700;" type="email" placeholder=" &#xf007;   username" name="name" value="" id="user_email" autocomplete="off" required >
-                    <span id="errorMessages" style="color: red;"></span>
 
-                <label for="password">Password</label> <br>
-                    <input style="font-family: 'Font Awesome 5 free'; font-weight: 700;" type="password" placeholder=" &#xf007; type your password" name="password" value="" id="password_id" autocomplete="off" required >
+                    <!-- <div id="errorMessages" style="color: red;"></div> -->
+
+                    <!-- <input style="font-family: 'Font Awesome 5 free'; font-weight: 700;" type="email" placeholder=" &#xf007;   username" name="name" value="" id="user_email" autocomplete="off" required > -->
                     <!-- <span id="errorMessages" style="color: red;"></span> -->
-                
+
+
+
+                    <!-- <span id="errorMessages" style="color: red;"></span> -->
+                    <!-- <input style="font-family: 'Font Awesome 5 free'; font-weight: 700;" type="password" placeholder=" &#xf007; type your password" name="password" value="" id="password_id" autocomplete="off" required > -->
+
+
             </div>
             <div class="forgot_pass">
-                <a  href="#"><span>Forgot Password?</span></a>
-                
-            </div>
-           
-            <div class="button_part">
-                <button type="button" id="button_id" onclick="submit_info()">Login</button>
+                <a href="#"><span>Forgot Password?</span></a>
+
             </div>
 
-        </form>
-        <span id="errorMessages" style="color: red;"></span>
+            <div class="button_part">
+                <button type="submit" id="button_id">Login</button>
+            </div>
+
+            </form>
+            <!-- <div id="errorMessages" style="color: red;"></div> -->
+
 
             <h5>Or sing up using</h5>
             <div class="social_links">
@@ -66,7 +82,7 @@
                 <h6>Or sing up using</h6>
 
             </div>
-           
+
 
             <div class="registerPage">
                 <a href="../FormDataShowing/index.html">Sing up</a>
@@ -76,6 +92,8 @@
 
 
     </section>
-    <script src="../InputValidation/validation.js"></script>
+    <!-- <script src="../InputValidation/validation.js"></script> -->
+    <script src="../InputValidation/validationNew.js"></script>
 </body>
+
 </html>

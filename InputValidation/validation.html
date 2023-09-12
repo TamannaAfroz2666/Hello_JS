@@ -31,13 +31,16 @@
                 <!-- <i class="fa-regular fa-user"></i>
                 <input  type="text" placeholder="username" name="name" value="" id="user_id" autocomplete="off" > -->
                     <input style="font-family: 'Font Awesome 5 free'; font-weight: 700;" type="email" placeholder=" &#xf007;   username" name="name" value="" id="user_email" autocomplete="off" required >
+                    <span id="errorMessages" style="color: red;"></span>
 
                 <label for="password">Password</label> <br>
                     <input style="font-family: 'Font Awesome 5 free'; font-weight: 700;" type="password" placeholder=" &#xf007; type your password" name="password" value="" id="password_id" autocomplete="off" required >
+                    <!-- <span id="errorMessages" style="color: red;"></span> -->
                 
             </div>
             <div class="forgot_pass">
                 <a  href="#"><span>Forgot Password?</span></a>
+                
             </div>
            
             <div class="button_part">
@@ -45,7 +48,7 @@
             </div>
 
         </form>
-        <div id="errorMessages" style="color: red;"></div>
+        <span id="errorMessages" style="color: red;"></span>
 
             <h5>Or sing up using</h5>
             <div class="social_links">

@@ -14,11 +14,13 @@ function submit_info (){
 
     // check email valid or not 
     if(!validateEmail(user_email.value)){
-        alert('please enter a valid email address');
+        // alert('please enter a valid email address');
+        errorMessages.innerHTML += '<p>Please enter a valid email address.</p>';
         return;
     }
     if(! validatePassword(password_id.value)){
-        alert ('Please enter a valid password');
+        // alert ('Please enter a valid password');
+        errorMessages.innerHTML += '<p>Please enter a valid password address.</p>';
         return;
     }
     alert('login successfully');

@@ -7,6 +7,12 @@ function submitInfo(){
     const userPassword = document.getElementById('passwordId').value;
     console.log('user password is ', userPassword);
 
+    // error message for input field accessing 
+
+    const errorMessages = document.getElementById('errorMessages');
+    const errorMessages1 = document.getElementById('errorMessages1');
+    const errorMessages12 = document.getElementById('errorMessages2');
+
     // access radio button info 
 
     const personalInfo = document.getElementById('personal');
@@ -15,8 +21,9 @@ function submitInfo(){
     const maleInfo = document.getElementById('maleId');
 
     // radio button checked 
-    if(personalInfo.checked){
-        console.log('personal checked');
+    if(!(personalInfo.checked)){
+        
+        alert('check the radio')
     }
     if(companyInfo.checked){
         console.log('company checked');

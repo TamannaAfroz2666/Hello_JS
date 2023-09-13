@@ -38,6 +38,13 @@ function submitInfo(){
         return alert('input ur name');
      }
 
+     if(!validPassword(userPassword)){
+        return alert('add password');
+     }
+     else{
+        window.location.href = '../validation.html'
+     }
+
 
 
 }

@@ -10,13 +10,21 @@ function submitHere(){
     //get error message
     const errorMessages = document.getElementById('errorMessages');
     errorMessages.innerHTML = '';
-    
-    if(!(newPasswordd === ReNewPassword)){
-        errorMessages.innerHTML += 'Not Match password'
-    }
-    else{
-        alert('successfully done')
+    const errorMessages1 = document.getElementById('errorMessagesNew');
+    errorMessages1.innerHTML = '';
+
+
+    if((newPasswordd === '') && (ReNewPassword === '')){
+        errorMessages1.innerHTML += 'add password first'
 
     }
+    if(!(newPasswordd === ReNewPassword)){
+        errorMessages.innerHTML += 'Not Match password'
+        return;
+    }
+    // else{
+    //     alert('successfully done')
+
+    // }
     
 }

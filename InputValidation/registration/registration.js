@@ -1,5 +1,5 @@
 function submitInfo(){
-    console.log('cleocv');
+ 
     const userEmail = document.getElementById('emailId').value;
     console.log('user emil is', userEmail);
     const userName = document.getElementById('Name').value;
@@ -10,13 +10,9 @@ function submitInfo(){
     // access radio button info 
 
     const personalInfo = document.getElementById('personal');
-    // console.log('personal info for radio ', personalInfo);
     const companyInfo = document.getElementById('company');
-    // console.log('company info is', companyInfo);
     const femaleInfo = document.getElementById('femaleId');
-    // console.log('female info is', femaleInfo);
     const maleInfo = document.getElementById('maleId');
-    // console.log('male info is', maleInfo);
 
     // radio button checked 
     if(personalInfo.checked){
@@ -32,4 +28,11 @@ function submitInfo(){
         console.log('male checked');
     }
     // radio button checked end
+}
+
+//email valid function 
+function validEmail(email) {
+    const emailRange = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    emailRange.test(email);
+    
 }

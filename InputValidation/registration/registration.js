@@ -13,6 +13,14 @@ function submitInfo(){
     const errorMessages1 = document.getElementById('errorMessages1');
     const errorMessages12 = document.getElementById('errorMessages2');
 
+     // error message for radio field accessing 
+     const errorMessagesRadio = document.getElementById('errorMessagesRadio');
+     const errorMessagesRadio2 = document.getElementById('errorMessagesRadio1');
+     errorMessagesRadio.innerHTML = '';
+     errorMessagesRadio2.innerHTML = '';
+
+
+
     // access radio button info 
 
     const personalInfo = document.getElementById('personal');

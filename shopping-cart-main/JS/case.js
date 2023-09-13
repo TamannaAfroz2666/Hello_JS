@@ -1,4 +1,6 @@
-document.getElementById('btn-case-plus').addEventListener('click', function(){
+
+function updateCaseNumber(increase) {
+
     console.log('click');
     const caseNumberField = document.getElementById('case-num-field');
     const caseNumStr = caseNumberField.value;
@@ -6,9 +8,24 @@ document.getElementById('btn-case-plus').addEventListener('click', function(){
     console.log('the integer number is:', priviousCaseNumber);
 
     //increse the value of input
-    const newCaseNumber = priviousCaseNumber +1;
-    caseNumberField.value = newCaseNumber;
+    // const newCaseNumber = priviousCaseNumber +1;
+    // caseNumberField.value = newCaseNumber;
+    let newCaseNumber;
+    if(increase === true){
+        newCaseNumber = priviousCaseNumber +1;
+
+    }
+    else{
+        newCaseNumber = priviousCaseNumber - 1;
+    }
 
     
- 
+}
+
+
+document.getElementById('btn-case-plus').addEventListener('click', function(){
+    updateCaseNumber(true);
+})
+document.getElementById('btn-case-minus').addEventListener('click', function(){
+    updateCaseNumber(false);
 })

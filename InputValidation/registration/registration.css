@@ -69,10 +69,14 @@ input[type="radio"] {
    position: relative;
    font-size: 16px;
    color: rgb(124, 100, 100);
-   font-weight: 600;
-   
-  
+   font-weight: 600; 
 
+}
+.forRadio{
+    bottom: 14px;
+    position: relative;
+    padding-left: 30px;
+    text-align: start;
 }
 /* input fields style  */
 .getInfo label {

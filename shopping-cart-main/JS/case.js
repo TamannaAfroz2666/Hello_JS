@@ -28,6 +28,8 @@ function updateCaseNumber(increase) {
 document.getElementById('btn-case-plus').addEventListener('click', function(){
     const newCaseNumber = updateCaseNumber(true);
     const totalPriceIncrese = newCaseNumber * 59;
+    const caseTotalElement = document.getElementById('case-total');
+    caseTotalElement.innerText = totalPriceIncrese;
 })
 document.getElementById('btn-case-minus').addEventListener('click', function(){
     updateCaseNumber(false);

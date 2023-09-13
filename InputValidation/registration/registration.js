@@ -53,9 +53,9 @@ function submitInfo(){
     }
     // radio button checked end
 
-    if((userEmail === '') && (userPassword === '')){
+    if((userEmail === '') && (userPassword === '') &&(userName === '')){
         errorMessagesEmail.innerHTML += 'Enter your valid email';
-     
+        errorMessagesName.innerHTML += ' name minimum 3 letter';
         errorMessagesPass.innerHTML += 'length minimum 8 carecters'
         return;
 

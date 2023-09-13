@@ -30,15 +30,27 @@ function submitInfo(){
     // radio button checked end
 
     // check valided for email 
-    if(!validEmail(userEmail.value)){
+    if(!validEmail(userEmail)){
         return alert('add emal');
     }
+     // check valided for name
+     if(!validName(userName)){
+        return alert('input ur name');
+     }
+
 
 }
 
 //email valid function 
 function validEmail(email) {
     const emailRange = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    emailRange.test(email);
+   return emailRange.test(email);
+    
+}
+function validName(name) {
+    const minLength = 3;
+     return(
+        name.length >= minLength
+     );
     
 }

@@ -39,3 +39,10 @@
     font-size: 14px;
     padding: 1px 10px;
 }
+.subPass span{
+    color: red;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    padding-left: 20px;
+
+}

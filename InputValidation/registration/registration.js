@@ -50,15 +50,20 @@ function submitInfo(){
 
     // check valided for email 
     if(!validEmail(userEmail)){
-        return alert('add emal');
+        // return alert('add emal');
+        errorMessagesEmail.innerHTML += 'Enter your valid email';
+        return;
     }
      // check valided for name
      if(!validName(userName)){
-        return alert('input ur name');
+        // return alert('input ur name');
+        errorMessagesName.innerHTML += 'Please add minimum 3 letter';
+        return;
      }
 
      if(!validPassword(userPassword)){
-        return alert('add password');
+        // return alert('add password');
+        errorMessagesPass.innerHTML += 'length minimum 8 carecters'
      }
      else{
         window.location.href = '../validation.html'

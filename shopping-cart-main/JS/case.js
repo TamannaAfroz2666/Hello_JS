@@ -19,12 +19,15 @@ function updateCaseNumber(increase) {
         newCaseNumber = priviousCaseNumber - 1;
     }
     caseNumberField.value =newCaseNumber;
+    // set priceing 
+    return newCaseNumber;
     
 }
 
 
 document.getElementById('btn-case-plus').addEventListener('click', function(){
-    updateCaseNumber(true);
+    const newCaseNumber = updateCaseNumber(true);
+    const totalPriceIncrese = newCaseNumber * 59;
 })
 document.getElementById('btn-case-minus').addEventListener('click', function(){
     updateCaseNumber(false);

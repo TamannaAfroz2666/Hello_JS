@@ -92,6 +92,7 @@ function validEmail(email) {
    return emailRange.test(email);
     
 }
+//name valid function 
 function validName(name) {
     const minLength = 3;
      return(
@@ -99,7 +100,7 @@ function validName(name) {
      );
     
 }
-
+//password valid function 
 function validPassword(password) {
     const minLength = 8;
     const hasUpperCase = /[A-Z]/.test(password);

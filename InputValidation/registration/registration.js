@@ -33,13 +33,18 @@ function submitInfo(){
     const maleInfo = document.getElementById('maleId');
 
     // radio button checked 
-    if(!(personalInfo.checked)){
-        
-        alert('check the radio')
+    if(!(personalInfo.checked) && !(companyInfo.checked)){
+        errorMessagesRadio.innerHTML += 'click your role';
+        // alert('check the radio'    
     }
-    if(companyInfo.checked){
-        console.log('company checked');
+    if(!(femaleInfo.checked) && !(maleInfo.checked)){
+        errorMessagesRadio2.innerHTML += "Click your gender";
+
     }
+
+    // if(companyInfo.checked){
+    //     console.log('company checked');
+    // }
     if(femaleInfo.checked){
         console.log('personal checked');
     }
@@ -47,6 +52,14 @@ function submitInfo(){
         console.log('male checked');
     }
     // radio button checked end
+
+    if((userEmail === '') && (userPassword === '')){
+        errorMessagesEmail.innerHTML += 'Enter your valid email';
+     
+        errorMessagesPass.innerHTML += 'length minimum 8 carecters'
+        return;
+
+    }
 
     // check valided for email 
     if(!validEmail(userEmail)){

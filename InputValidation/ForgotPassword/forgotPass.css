@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.forgotPass{
+    height: 30em;
+    background-color: bisque;
+    margin-top: 20px;
+}
+.infoField{
+    display: flex;
+    gap: 20px;
+    
+}

@@ -119,6 +119,11 @@ input[type="radio"] {
 .sub_clas{
     display: flex;
 }
+.sub_clas span{
+    top: 10px;
+    position: relative;
+    /* padding-top:  20px; */
+}
 
 /* input fields style end  */
 .underInput{

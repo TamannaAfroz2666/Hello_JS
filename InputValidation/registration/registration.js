@@ -9,9 +9,13 @@ function submitInfo(){
 
     // error message for input field accessing 
 
-    const errorMessages = document.getElementById('errorMessages');
-    const errorMessages1 = document.getElementById('errorMessages1');
-    const errorMessages12 = document.getElementById('errorMessages2');
+    const errorMessagesEmail = document.getElementById('errorMessages');
+    const errorMessagesName = document.getElementById('errorMessages1');
+    const errorMessagesPass = document.getElementById('errorMessages2');
+    errorMessagesEmail.innerHTML = '';
+    errorMessagesName.innerHTML = '';
+    errorMessagesPass.innerHTML = '';
+
 
      // error message for radio field accessing 
      const errorMessagesRadio = document.getElementById('errorMessagesRadio');

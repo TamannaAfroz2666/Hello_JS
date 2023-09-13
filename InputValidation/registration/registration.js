@@ -28,6 +28,12 @@ function submitInfo(){
         console.log('male checked');
     }
     // radio button checked end
+
+    // check valided for email 
+    if(!validEmail(userEmail.value)){
+        return alert('add emal');
+    }
+
 }
 
 //email valid function 

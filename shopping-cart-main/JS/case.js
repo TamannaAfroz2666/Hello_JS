@@ -27,6 +27,9 @@ function updateCaseNumber(increase) {
 
 document.getElementById('btn-case-plus').addEventListener('click', function(){
     const newCaseNumber = updateCaseNumber(true);
+
+    // calculate the price 
+    
     const totalPriceIncrese = newCaseNumber * 59;
     const caseTotalElement = document.getElementById('case-total');
     caseTotalElement.innerText = totalPriceIncrese;

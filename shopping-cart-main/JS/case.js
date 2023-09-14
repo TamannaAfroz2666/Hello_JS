@@ -24,21 +24,21 @@ function updateCaseNumber(increase) {
     
 }
 
+  // calculate the price 
+function updateCaseTotalPrice(){
+    const totalPriceIncrese = newCaseNumber * 59;
+    const caseTotalElement = document.getElementById('case-total');
+    caseTotalElement.innerText = totalPriceIncrese;
+
+}
 
 document.getElementById('btn-case-plus').addEventListener('click', function(){
     const newCaseNumber = updateCaseNumber(true);
-
-    // calculate the price 
+    updateCaseTotalPrice();
     
-    const totalPriceIncrese = newCaseNumber * 59;
-    const caseTotalElement = document.getElementById('case-total');
-    caseTotalElement.innerText = totalPriceIncrese;
 })
 document.getElementById('btn-case-minus').addEventListener('click', function(){
     const newCaseNumber=  updateCaseNumber(false);
+    updateCaseTotalPrice();
 
-        // calculate the price 
-    const totalPriceIncrese = newCaseNumber * 59;
-    const caseTotalElement = document.getElementById('case-total');
-    caseTotalElement.innerText = totalPriceIncrese;
 })

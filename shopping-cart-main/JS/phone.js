@@ -26,6 +26,11 @@ function updatePhone(increase) {
 
 
 document.getElementById('btn-phone-plus').addEventListener('click', function(){
-    updatePhone();
+    updatePhone(true);
 
-})
+});
+
+document.getElementById('btn-pho-minus').addEventListener('click', function(){
+    updatePhone(false);
+
+});

@@ -24,13 +24,22 @@ function updatePhone(increase) {
     
 }
 
+function updateTotalPrice(newPhoneNum){
+    const totalPrice = newPhoneNum * 1219;
+    const phoneTotalElement = document.getElementById('phone-total')
+    phoneTotalElement.innerText = totalPrice;
+
+}
+
 
 document.getElementById('btn-phone-plus').addEventListener('click', function(){
-    updatePhone(true);
+    const newPhoneNum =  updatePhone(true);
+    updateTotalPrice(newPhoneNum)
 
 });
 
 document.getElementById('btn-pho-minus').addEventListener('click', function(){
-    updatePhone(false);
+    const newPhoneNum = updatePhone(false);
+    updateTotalPrice(newPhoneNum)
 
 });

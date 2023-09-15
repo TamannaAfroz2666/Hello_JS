@@ -31,10 +31,20 @@ function updateTotalPrice(newPhoneNum){
 
 }
 
+function getElementValueById(elementId){
+    const phoneTotalElement = document.getElementById(elementId);
+    const currentTotalStr = phoneTotalElement.innerText;
+    const currentPhoneTotal = parseInt(currentTotalStr);
+    return currentPhoneTotal;
+}
+
 
 document.getElementById('btn-phone-plus').addEventListener('click', function(){
     const newPhoneNum =  updatePhone(true);
-    updateTotalPrice(newPhoneNum)
+    updateTotalPrice(newPhoneNum);
+
+    // calculate total 
+    const currentPhoneTotal = document.getElementById('phone-total')
 
 });
 

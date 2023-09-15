@@ -1,12 +1,31 @@
-document.getElementById('btn-phone-plus').addEventListener('click', function(){
-    // console.log('hajibaji');
 
+function updatePhone(increase) {
+
+    
     const phoneNumField = document.getElementById('phone-num-field');
     const phoneNumFieldStr = phoneNumField.value;
     const priviousPhoneNum = parseInt(phoneNumFieldStr);
 
     // value change 
 
-    const newPhoneNum = priviousPhoneNum + 1;
+    let newPhoneNum ;
+
+    if(increase === true){
+       newPhoneNum = priviousPhoneNum + 1;
+
+    }
+    else{
+        newPhoneNum = priviousPhoneNum - 1; 
+    }
+    
     phoneNumField.value = newPhoneNum;
+    return newPhoneNum;
+
+    
+}
+
+
+document.getElementById('btn-phone-plus').addEventListener('click', function(){
+    updatePhone();
+
 })

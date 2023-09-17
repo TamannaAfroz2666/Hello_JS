@@ -40,26 +40,30 @@ function getElementValueById(elementId){
     return currentPhoneTotal;
 }
 
+function subTotal(){
+     // calculate total 
+     const currentPhoneTotal = getElementValueById('phone-total');
+     const currentCaseTotal = getElementValueById('case-total');
+     const currentSubTotal = currentPhoneTotal + currentCaseTotal;
+     const subTotalElement = document.getElementById('sub-total');
+     // value set 
+     subTotalElement.innerText = currentSubTotal;
+
+}
+
 
 document.getElementById('btn-phone-plus').addEventListener('click', function(){
     const newPhoneNum =  updatePhone(true);
     updateTotalPrice(newPhoneNum);
-
-    // calculate total 
-    // const currentPhoneTotal = document.getElementById('phone-total');
-    // const currentCaseTotal = document.getElementById('case-total');
-    const currentPhoneTotal = getElementValueById('phone-total')
-    const currentCaseTotal = getElementValueById('case-total')
-    const currentSubTotal = currentPhoneTotal + currentCaseTotal;
-    const subTotalElement = document.getElementById('sub-total');
-    // value set 
-    subTotalElement.innerText = currentSubTotal;
+    subTotal();
+   
 
 
 });
 
 document.getElementById('btn-pho-minus').addEventListener('click', function(){
     const newPhoneNum = updatePhone(false);
-    updateTotalPrice(newPhoneNum)
+    updateTotalPrice(newPhoneNum);
+    subTotal();
 
 });

@@ -6,13 +6,24 @@ function getElementValueById(elementId){
     return currentPhoneTotal;
 }
 
+function setTextElement(elementId, value){
+    const subTotalElement = document.getElementById(elementId);
+     // value set 
+     subTotalElement.innerText = value;
+
+}
+
 function subTotal(){
      // calculate total 
      const currentPhoneTotal = getElementValueById('phone-total');
      const currentCaseTotal = getElementValueById('case-total');
      const currentSubTotal = currentPhoneTotal + currentCaseTotal;
-     const subTotalElement = document.getElementById('sub-total');
-     // value set 
-     subTotalElement.innerText = currentSubTotal;
+     setTextElement('sub-total', currentSubTotal)
+
+    //  calculate tax (10% calculate)
+    const taxAmount = currentSubTotal * 0.1;
+    setTextElement('tax-amount', taxAmount);
+
+    // calculate total 
 
 }

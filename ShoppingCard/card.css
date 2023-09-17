@@ -18,3 +18,17 @@
     top: 30px;
     position: relative;
 }
+.searchBar{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    
+}
+.searchBar input{
+    width: 400px;
+    height: 45px;
+    margin-top: 20px;
+    border: 0;
+    border-radius: 20px;
+    box-shadow: 10px  wheat;
+}

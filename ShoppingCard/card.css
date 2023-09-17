@@ -62,7 +62,14 @@
     color: white;
     
 }
-.cartIcon
+ h5{
+    /* line-height: 80px; */
+    font-size: 20px;
+    padding-top: 25px;
+    right: 30px;
+    position: relative;
+    
+}
 .megaMiniList{
     display:none;
 }

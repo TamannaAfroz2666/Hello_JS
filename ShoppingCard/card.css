@@ -126,3 +126,10 @@
     color: rgb(24, 24, 223);
 
 }
+
+
+/* all hover here start  */
+.cardItems:hover h4{
+    color: red;
+    font-weight: 700;
+}

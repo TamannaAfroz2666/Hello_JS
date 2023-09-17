@@ -31,6 +31,8 @@ function updateTotalPrice(newPhoneNum){
 
 }
 
+
+//total calculations function
 function getElementValueById(elementId){
     const phoneTotalElement = document.getElementById(elementId);
     const currentTotalStr = phoneTotalElement.innerText;
@@ -47,6 +49,7 @@ document.getElementById('btn-phone-plus').addEventListener('click', function(){
     const currentPhoneTotal = document.getElementById('phone-total');
     const currentCaseTotal = document.getElementById('case-total');
     const currentSubTotal = currentPhoneTotal + currentCaseTotal;
+    const subTotalElement = document.getElementById('')
 
 });
 

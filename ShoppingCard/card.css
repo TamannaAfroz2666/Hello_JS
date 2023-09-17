@@ -34,6 +34,10 @@
     border-radius: 20px;
     box-shadow: 10px  wheat;
 }
+::placeholder{
+    font-size: 18px;
+    padding-left: 10px;
+}
 .icon  {
     font-size: 30px;
     right: 50px;
@@ -44,17 +48,11 @@
     border-radius: 20px;
     border: 0;
 }
-/* .cartIcon i {
-    font-size: 20px;
-   
-    
-} */
 .cartIconBtn{
     border: 0;
     margin-top: 15px;
     padding: 10px;
     background-color: rgb(238, 45, 45);
-
 
 }
 .cartIconBtn i{
@@ -83,10 +81,8 @@
 }
 .miniHeader li {
     padding: 10px 40px;
-
     background-size: cover;
-    background-position: center;
- 
+    background-position: center; 
     position: relative;
 }
 .leftHeader{

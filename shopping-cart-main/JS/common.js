@@ -17,13 +17,17 @@ function subTotal(){
      // calculate total 
      const currentPhoneTotal = getElementValueById('phone-total');
      const currentCaseTotal = getElementValueById('case-total');
+
      const currentSubTotal = currentPhoneTotal + currentCaseTotal;
      setTextElement('sub-total', currentSubTotal)
 
     //  calculate tax (10% calculate)
-    const taxAmount = currentSubTotal * 0.1;
-    setTextElement('tax-amount', taxAmount);
+    var taxAmount = currentSubTotal * 0.1;
+    // console.log('tax amount', taxAmount);
+    setTextElement('tax-amount', currentSubTotal)
 
     // calculate total 
+    var totalAmount = currentSubTotal + taxAmount;
+    setTextElement('final-total', totalAmount);
 
 }

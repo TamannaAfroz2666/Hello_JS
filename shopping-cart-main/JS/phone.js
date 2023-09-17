@@ -46,10 +46,15 @@ document.getElementById('btn-phone-plus').addEventListener('click', function(){
     updateTotalPrice(newPhoneNum);
 
     // calculate total 
-    const currentPhoneTotal = document.getElementById('phone-total');
-    const currentCaseTotal = document.getElementById('case-total');
+    // const currentPhoneTotal = document.getElementById('phone-total');
+    // const currentCaseTotal = document.getElementById('case-total');
+    const currentPhoneTotal = getElementValueById('phone-total')
+    const currentCaseTotal = getElementValueById('case-total')
     const currentSubTotal = currentPhoneTotal + currentCaseTotal;
-    const subTotalElement = document.getElementById('')
+    const subTotalElement = document.getElementById('sub-total');
+    // value set 
+    subTotalElement.innerText = currentSubTotal;
+
 
 });
 

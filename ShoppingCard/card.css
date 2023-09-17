@@ -104,15 +104,13 @@
 .cardMain{
     display: grid;
     grid-template-columns: auto auto auto auto;
-    /* margin: auto; */
-    /* gap: 20px; */
 }
 .cardItems{
     margin-top: 30px;
-    border: 3px solid wheat;
+    border: 3px solid rgb(245, 238, 226);
     width: 240px;
     height: 300px;
-    box-shadow: 0px 10px wheat;
+    box-shadow: 0px 10px #fff
 }
  img{
     padding-top:10px;

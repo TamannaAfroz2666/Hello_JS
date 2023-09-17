@@ -14,6 +14,7 @@ function setTextElement(elementId, value){
 }
 
 function subTotal(){
+    console.log('its common page');
      // calculate total 
      const currentPhoneTotal = getElementValueById('phone-total');
      const currentCaseTotal = getElementValueById('case-total');

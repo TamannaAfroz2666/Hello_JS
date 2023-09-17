@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    list-style: none;
 }
 
 .main_class{
@@ -42,8 +44,25 @@
     border-radius: 20px;
     border: 0;
 }
-.cartIcon i {
+/* .cartIcon i {
     font-size: 20px;
-    /* color: wheat; */
+   
     
+} */
+.cartIconBtn{
+    border: 0;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: rgb(238, 45, 45);
+
+
+}
+.cartIconBtn i{
+    font-size: 33px;
+    color: white;
+    
+}
+.cartIcon
+.megaMiniList{
+    display:none;
 }

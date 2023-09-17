@@ -23,9 +23,10 @@ function subTotal(){
      setTextElement('sub-total', currentSubTotal)
 
     //  calculate tax (10% calculate)
-    var taxAmount = currentSubTotal * 0.1;
-    // console.log('tax amount', taxAmount);
-    setTextElement('tax-amount', currentSubTotal)
+    var taxAmountstr = (currentSubTotal * 0.1).toFixed(2);
+    const taxAmount = parseFloat(taxAmountstr);
+  
+    setTextElement('tax-amount', taxAmount)
 
     // calculate total 
     var totalAmount = currentSubTotal + taxAmount;

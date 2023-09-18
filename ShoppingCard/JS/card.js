@@ -12,7 +12,8 @@ function getInputValue(){
     console.log('walton product price is:', priceValue);
 
     //calculate the price with product quantity
-    // const totalPrice = 
+    const totalPrice = productNumberValue * priceValue; 
+    console.log('total price is:', totalPrice);
 
 
 }

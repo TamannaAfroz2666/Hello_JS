@@ -174,22 +174,15 @@
     position: relative; */
     
 }
-.cardPrice span a{
-   
-    text-decoration: none;
-    /* padding-left:  3.5em ; */
-    /* line-height: 50px !important; */
-    /* padding-top: 4.5px; */
-    padding: 4px;
 
-    /* border: 2px solid rgb(199, 190, 190); */
-    border-radius: 10px;
+.addACadd{
+    /* padding: 20px 10px; */
+    border: 0;
     background-color: rgb(66, 60, 60);
     color: #fff;
-   
-}
-.cardPrice .addACadd{
-    /* padding: 20px 10px; */
+    padding: 2px;
+    border-radius: 10px;
+    font-size: 15px;
 }
 
 

@@ -15,13 +15,17 @@ function getInputValue(){
     const totalPrice = productNumberValue * priceValue; 
     console.log('total price is:', totalPrice);
 
+    // Quantity passing 
+
+    const cardShow = document.getElementById('cartShowQuantity').innerText = productNumberValue;
+    console.log('innerText is :', cardShow);
+
 
 }
 
 function addAcardWalton(){
     console.log('hee');
     getInputValue();
-    const cardShow = document.getElementById('cartShowQuantity').innerText;
-    console.log('innerText is :', cardShow);
+   
 
 }

@@ -107,7 +107,7 @@
     margin-top: 30px;
     border: 1px solid rgb(245, 238, 226);
     width: 240px;
-    height: 420px;
+    height: 440px;
 
 }
 :hover.cardItems{
@@ -172,7 +172,6 @@
 
 
 .addACadd{
- 
     border: 0;
     background-color: rgb(66, 60, 60);
     color: #fff;
@@ -193,6 +192,7 @@
     padding: 2px;
     font-size: 11px;
 }
+
 .buyMe button{
     color: rgb(109, 98, 98);
     font-size: 13px;
@@ -209,10 +209,14 @@
 
 
 
+
 /* all hover here start  */
 .cardItems:hover h4{
     color: red;
     font-weight: 700;
+}
+.addACadd:hover{
+    background-color: rgb(80, 80, 235);
 }
 .buyMe:hover button{
     color: red;

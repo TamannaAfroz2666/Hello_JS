@@ -44,7 +44,6 @@
     position: relative;
     padding: 2px;
     margin-top: 2px;
-    /* background-color: rgb(6, 179, 179); */
     border-radius: 20px;
     border: 0;
 }
@@ -69,7 +68,6 @@
 }
 .megaMiniList{
     width: 100%;
-    /* background-color: whitesmoke; */
     top: 12px;
     position: relative;
     display:none;
@@ -109,7 +107,7 @@
     margin-top: 30px;
     border: 1px solid rgb(245, 238, 226);
     width: 240px;
-    height: 400px;
+    height: 420px;
 
 }
 :hover.cardItems{
@@ -136,7 +134,7 @@
 
 .cardItems h4{
     text-align: center;
-    padding-top: 18px;
+    padding-top: 10px;
     font-size: 16px;
     color: rgb(24, 24, 223);
 }

@@ -1,10 +1,10 @@
 
 // ----start -----
 function getInputValue(){
-    const productNumber = document.getElementById('waltonValue');
-    const  productNumberStr = productNumber.value;
-    const productNumberValue = parseInt(productNumberStr)
-    console.log('Input product number is:', productNumberValue);
+    // const productNumber = document.getElementById('waltonValue');
+    // const  productNumberStr = productNumber.value;
+    // const productNumberValue = parseInt(productNumberStr)
+    // console.log('Input product number is:', productNumberValue); 
 
     //price value get
     const priceValueStr = document.getElementById('priceWL').innerText;
@@ -15,10 +15,22 @@ function getInputValue(){
     const totalPrice = productNumberValue * priceValue; 
     console.log('total price is:', totalPrice);
 
+    
+
+
+}
+
+function inputValue(){
+    const productNumber = document.getElementById('waltonValue');
+    const  productNumberStr = productNumber.value;
+    const productNumberValue = parseInt(productNumberStr)
+    console.log('Input product number is:', productNumberValue); 
+
     // Quantity passing 
 
     const cardShow = document.getElementById('cartShowQuantity').innerText = productNumberValue;
     console.log('innerText is :', cardShow);
+
 
 
 }
@@ -26,6 +38,7 @@ function getInputValue(){
 function addAcardWalton(){
     console.log('hee');
     getInputValue();
+    inputValue();
    
 
 }

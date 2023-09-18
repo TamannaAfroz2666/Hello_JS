@@ -59,6 +59,15 @@
     color: white;
     
 }
+.cartIconBtn span{
+    bottom: 20px;
+    right: 10px;
+    position: relative;
+    padding: 2px 2px;
+    border: 2px solid white;
+    border-radius: 100%;
+    color: #fff;
+}
  h5{
     font-size: 20px;
     padding-top: 25px;

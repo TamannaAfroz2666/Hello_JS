@@ -191,9 +191,15 @@
 .buyMe i{
     color: rgb(16, 230, 16);
     border: 1px solid rgb(16, 230, 16);
-    border-radius: 50px;
-    padding: 3px;
+    border-radius: 100%;
+    padding: 2px;
     font-size: 11px;
+}
+.buyMe button{
+    color: rgb(109, 98, 98);
+    font-size: 13px;
+    border: 0;
+    background-color: #fff;
 }
 
 

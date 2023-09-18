@@ -4,3 +4,7 @@ function searchBtn(){
 function addAcard(){
     console.log('helo card');
 }
+ function buyNowBtn(){
+    console.log('Buy now here');
+
+}

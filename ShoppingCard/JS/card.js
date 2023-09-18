@@ -21,4 +21,7 @@ function getInputValue(){
 function addAcardWalton(){
     console.log('hee');
     getInputValue();
+    const cardShow = document.getElementById('cartShowQuantity').innerText;
+    console.log('innerText is :', cardShow);
+
 }

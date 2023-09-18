@@ -51,6 +51,14 @@ function inputValueOnChange() {
 
 }
 
+//headphone onchange field
+function inputChangeField(){
+    const headphoneValueStr = document.getElementById('headPhoValue').value;
+    const headphoneValue = parseInt(headphoneValueStr);
+    console.log('headphone input value is', headphoneValue);
+}
+
+
 // Main function or button 
 function addAcardWalton() {
     console.log('hee');
@@ -63,4 +71,5 @@ function addAcardWalton() {
 function addCartHeadPho(){
     // console.log('headphone is here');
     getInputValue();
+    inputChangeField();
 }

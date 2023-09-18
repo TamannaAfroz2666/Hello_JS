@@ -12,17 +12,15 @@ function getInputValue() {
     const priceHeadPho = parseFloat(priceHeadPhoStr);
     console.log('the headphone price is :', priceHeadPho);
 
-
-    // console.log('walton product price is:', priceValue);
     // calculate total price 
     const totalPrice = priviousFunc * priceValue;
-    // console.log('total price is:', totalPrice);
+
 
 
 }
 
 
-//  Walton input value get 
+//  Walton input value onChange field 
 function inputValueOnChange() {
     const productNumber = document.getElementById('waltonValue');
     const productNumberStr = productNumber.value;
@@ -56,12 +54,16 @@ function inputChangeField(){
     const headphoneValueStr = document.getElementById('headPhoValue').value;
     const headphoneValue = parseInt(headphoneValueStr);
     console.log('headphone input value is', headphoneValue);
+
+    // QUANTITY PASSS
+    const quantityPass = document.getElementById('cartShowQuantity').innerText = headphoneValue;
+    // return quantityPass;
 }
 
 
 // Main function or button 
 function addAcardWalton() {
-    console.log('hee');
+    // console.log('hee');
     getInputValue();
     inputValueOnChange();
 }

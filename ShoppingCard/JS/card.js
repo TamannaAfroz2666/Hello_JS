@@ -14,6 +14,7 @@ function getInputValue() {
 
     // calculate total price 
     const totalPrice = priviousFunc * priceValue;
+    
 
 
 
@@ -22,6 +23,7 @@ function getInputValue() {
 
 //  Walton input value onChange field 
 function inputValueOnChange() {
+    var cardShowInnerTest = 0;
     const productNumber = document.getElementById('waltonValue');
     const productNumberStr = productNumber.value;
     const productNumberValue = parseInt(productNumberStr);
@@ -29,11 +31,18 @@ function inputValueOnChange() {
 
     // Quantity passing 
 
-    const cardShow = document.getElementById('cartShowQuantity').innerText = productNumberValue;
-    // console.log('innerText is :', cardShow);
+    // const cardShow = document.getElementById('cartShowQuantity').innerText = productNumberValue;
+    const cardShow = document.getElementById('cartShowQuantity');
+    const cardShowInnerStr = cardShow.innerText;
+    const cardShowInner = parseInt(cardShowInnerStr);
+    console.log('innerText is :', cardShow);
+
+
+    // calculate the input value and card value 
+    const newSumValue = productNumberValue + cardShowInnerTest;
+    cardShow.innerText = newSumValue;
 
     //access price field
-
     const priceValueStr = document.getElementById('priceWL').innerText;
     const priceValue = parseFloat(priceValueStr);
     // console.log('walton product price is:', priceValue);

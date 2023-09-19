@@ -33,7 +33,6 @@ function depositAmount(){
     const totalBalance = showBalanceValue + newDepositAmount;
     showBalance.innerText = totalBalance;
 
-   
 }
 
 function withdrawAmount() {

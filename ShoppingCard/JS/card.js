@@ -41,7 +41,7 @@ function inputValueOnChange() {
     // calculate total price 
 
     const totalPrice = productNumberValue * priceValue;
-    // console.log('total price is:', totalPrice);
+    console.log('total price is:', totalPrice);
 
     return productNumberValue;
 

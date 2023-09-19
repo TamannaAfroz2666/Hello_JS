@@ -9,10 +9,16 @@ function cardValueChanged(){
     //price value get for walton
     const priceValueStr = document.getElementById('priceWL').innerText;
     const priceValue = parseFloat(priceValueStr);
+    console.log('walton price is',priceValue);
     // Walton input onchange value 
     const productNumber = document.getElementById('waltonValue');
     const productNumberStr = productNumber.value;
     const productNumberValue = parseInt(productNumberStr);
+    console.log('walton productNumber is', productNumberValue);
+
+    // calculate the quantity with price 
+    const productQuantityPrice = priceValue * productNumberValue;
+    console.log('walton quantiyty total price is', productQuantityPrice);
 
        // -------for walton part----
 

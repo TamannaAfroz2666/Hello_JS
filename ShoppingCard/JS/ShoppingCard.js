@@ -37,11 +37,12 @@ function cardValueChanged(){
     console.log('headphone quantity total price',headphoneQuantityPrice);
 
 
-    // ------------  QUANTITY PASSS -----
+    // ------------  QUANTITY PASSS for headphone -----
 
-   
     const quantityPass = document.getElementById('cartShowQuantity').innerText = headphoneValue;
+    // ------------  QUANTITY PASSS for walton -----
 
+    const quantityPassWal = document.getElementById('cartShowQuantity').innerText = productNumberValue;
 
 
 }

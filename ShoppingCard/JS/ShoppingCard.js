@@ -26,11 +26,17 @@ function cardValueChanged(){
     const priceHeadPhoStr = document.getElementById('priceHd').innerText;
     const priceHeadPho = parseFloat(priceHeadPhoStr);
     console.log('the headphone price is :', priceHeadPho);
+
     // headphone input onchange value
     const headphoneValueStr = document.getElementById('headPhoValue').value;
     const headphoneValue = parseInt(headphoneValueStr);
     console.log('headphone input value is', headphoneValue);
-    
+
+    // calculate the quantity with price 
+    const headphoneQuantityPrice = priceHeadPho * headphoneValue;
+    console.log('headphone quantity total price',headphoneQuantityPrice);
+
+
 
 
 }

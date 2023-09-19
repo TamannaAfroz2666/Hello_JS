@@ -1,9 +1,7 @@
 
 
 // -----start ------//
-
 function cardValueChanged(){
-    console.log('click');
     // -------for walton part----
 
     //price value get for walton
@@ -42,8 +40,35 @@ function cardValueChanged(){
     const quantityPass = document.getElementById('cartShowQuantity').innerText = headphoneValue;
     // ------------  QUANTITY PASSS for walton -----
 
-    const quantityPassWal = document.getElementById('cartShowQuantity').innerText = productNumberValue;
 
+     const quantityPassWal = document.getElementById('cartShowQuantity').innerText = productNumberValue;
+     console.log('quantity passing walton', quantityPassWal);
+
+     
+
+    //  const addShowNewSumQuantity = document.getElementById('cartShowQuantity').innerText = newAddQuantity;
+   
+   if(headphoneValue > 0 && productNumberValue > 0){
+    const newAddQuantity = quantityPassWal + quantityPass;
+     console.log('total twho part sum of quantity', newAddQuantity);
+     const addShowNewSumQuantity = document.getElementById('cartShowQuantity').innerText = newAddQuantity;
+   }
+
+
+}
+
+
+
+// for input onchange field in walton
+function inputValueOnChange(){
+    cardValueChanged();
+
+}
+
+// Main function of walton 
+function addCardWalton() {
+    cardValueChanged();
+    // return true;
 
 }
 // for input onchange field in headphone 
@@ -52,20 +77,15 @@ function inputChangeField(){
 
 }
 
-// for input onchange field in walton
-
-function inputValueOnChange(){
-    cardValueChanged();
-
-}
-
-// Main function or button 
-function addCardWalton() {
-    cardValueChanged();
-
-}
-
 // for  headphone function 
 function addCartHeadPho() {
     cardValueChanged();
+    // return true
 }
+
+// // quantity sum of function 
+// function quantityAllSum(){
+ 
+
+
+// }

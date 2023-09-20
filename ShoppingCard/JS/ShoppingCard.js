@@ -86,4 +86,13 @@ function addCartHeadPho() {
 // card onclick function 
 function show(){
     console.log('click here');
+   document.getElementById('mainPosList').style.height = "100% ";
+   document.getElementById('mainPosList').style.display = "block ";
+   document.getElementById('clockButton').style.display = "block";
+}
+function hide(){
+    console.log('click here');
+   document.getElementById('mainPosList').style.height = "0px ";
+   document.getElementById('mainPosList').style.display = "none ";
+   document.getElementById('clockButton').style.display = "inline";
 }

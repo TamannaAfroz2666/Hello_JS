@@ -37,9 +37,9 @@
 
                     <div class="cartIcon">
                         <li>
-                            <button class="cartIconBtn" onclick="show()"><i class="fa-solid fa-cart-shopping"></i> <span id="cartShowQuantity">0</span></button>
+                            <button class="cartIconBtn" onclick="show()" id="clockButton"><i class="fa-solid fa-cart-shopping"></i> <span id="cartShowQuantity">0</span></button>
                             <!-- mega list start  -->
-                            <div class="megaList">
+                            <div class="megaList" id="mainPosList">
                                 <div class="megaMiniList">
                                     <div class="miniHeader">
                                         <div class="leftHeader">Shopping cart
@@ -49,6 +49,7 @@
                                             
                                         </div>
                                     </div>
+                                    <button type="button" onclick="hide()">add</button>
                                     <span>
                                         <hr>
                                     </span>
@@ -58,10 +59,11 @@
 
 
 
-
+                                   
                                 </div>
 
                             </div>
+                           
 
 
 

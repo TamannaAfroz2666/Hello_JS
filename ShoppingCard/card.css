@@ -77,6 +77,8 @@
 }
 .megaList{
     display: none;
+    position: fixed;
+    
 }
 .megaMiniList{
     width: 100%;

@@ -48,7 +48,7 @@ function cardValueChanged(){
 
     //  const addShowNewSumQuantity = document.getElementById('cartShowQuantity').innerText = newAddQuantity;
    
-   if(headphoneValue > 0 && productNumberValue > 0){
+   if(headphoneValue > 0 || productNumberValue > 0){
     const newAddQuantity = quantityPassWal + quantityPass;
      console.log('total twho part sum of quantity', newAddQuantity);
      const addShowNewSumQuantity = document.getElementById('cartShowQuantity').innerText = newAddQuantity;
@@ -83,9 +83,7 @@ function addCartHeadPho() {
     // return true
 }
 
-// // quantity sum of function 
-// function quantityAllSum(){
- 
-
-
-// }
+// card onclick function 
+function show(){
+    console.log('click here');
+}

@@ -77,11 +77,14 @@
 }
 .megaMiniList{
     width: 100%;
+    height: 100%;
     top: 12px;
     position: relative;
+    /* background-color: red; */
     /* display:none; */
 }
 .miniHeader{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     height: 50px;

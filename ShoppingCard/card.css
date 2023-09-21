@@ -105,14 +105,6 @@
     background-color: rgb(89, 89, 139);
 
 }
-.showProductResult{
-    display: flex;
-    
-}
-.showResultOrder{
-    height: 100%;
-    width: 50%;
-}
 
 /* header design end  */
 
@@ -218,7 +210,21 @@
     background-color: #fff;
 }
 
+/* pos table start */
+.showProductResult{
+    display: flex;
+    margin-top: 30px;
+}
+.showResultOrder{
+    height: 100%;
+    width: 50%;
+}
 
+.productImage{
+    width: 100px;
+    height: 50px;
+    
+}
 
 
 

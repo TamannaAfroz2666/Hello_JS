@@ -55,8 +55,23 @@ function cardValueChanged(){
    }
 
 
-//    value passing field 
+  //  ---------  attribute  passing field ------
 
+//   const waltonImage = document.getElementById('imageWalton').style.display='block';
+//   const btnID = document.getElementById('clockButton').style.display = "none";
+//   console.log('the walton  image is', waltonImage);
+//   const imagePlace = document.getElementById('SelectproductImage').innerText = waltonImage
+
+// const titleImage = document.getElementById('waltonTitle').value;
+// const waltonTile = document.getElementById('selectProductTitle').innerText = titleImage;
+
+//   -----LocalStorage ------
+
+localStorage.setItem('waltonTitle', 'Walton WSI-INVERNA');
+const num1 = localStorage.getItem('waltonTitle');
+console.log('localstorage is:', num1);
+const waltonTile = document.getElementById('selectProductTitle').innerText = num1;
+console.log('localstorage is on setttt:', waltonTile);
 
 }
 
@@ -92,6 +107,9 @@ function show(){
    document.getElementById('mainPosList').style.height = "100% ";
    document.getElementById('mainPosList').style.display = "block ";
    document.getElementById('clockButton').style.display = "block";
+
+
+ ;
 }
 function hide(){
     console.log('click here');

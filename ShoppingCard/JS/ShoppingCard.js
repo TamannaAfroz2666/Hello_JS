@@ -55,6 +55,9 @@ function cardValueChanged(){
    }
 
 
+//    value passing field 
+
+
 }
 
 

@@ -62,6 +62,9 @@ const num1 = localStorage.getItem('waltonTitle');
 const waltonTile = document.getElementById('selectProductTitle').innerText = num1;
 // console.log('localstorage is on setttt:', waltonTile);
  const quantityIs = document.getElementById('selectProductQuantity').innerText = productNumberValue;
+ const withIconPriceIs = document.getElementById('withIconPrice').innerText;
+ console.log('withIconPriceIs', withIconPriceIs);
+ const priceTitleIs = document.getElementById('priceTitle').innerText = withIconPriceIs;
 }
 
 
